@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { CheckIcon } from "./icons";
-import type { KitItem } from "@/content/kits/kit72h";
+import type { KitItem } from "@/content/kits/types";
 
 export default function KitChecklist({
   storageKey,

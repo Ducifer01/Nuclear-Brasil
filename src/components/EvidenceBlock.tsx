@@ -1,5 +1,6 @@
 import ReactMarkdown from "react-markdown";
-import { CheckIcon, XMarkSmallIcon } from "./icons";
+import { CheckIcon, ClockIcon, XMarkSmallIcon } from "./icons";
+import type { ArticleStatus } from "@/content/learn/types";
 
 const TONE = {
   teal: "bg-teal-tint text-teal",
@@ -57,15 +58,36 @@ export function MythsSection({ items }: { items: string[] }) {
   );
 }
 
-export function VerifiedBadge({ small }: { small?: boolean }) {
+/**
+ * Selo de status editorial — roadmap §47 "Sistema de alerta de conteúdo
+ * desatualizado". Artigos "verified" mostram ✓ VERIFICADO; os demais
+ * mostram ⚠ NECESSITA REVISÃO, para não passar mais confiança do que o
+ * artigo realmente tem.
+ */
+export function VerifiedBadge({
+  small,
+  status = "verified",
+}: {
+  small?: boolean;
+  status?: ArticleStatus;
+}) {
+  const size = small ? "text-[9px]" : "text-[9.5px]";
+  if (status === "verified") {
+    return (
+      <span
+        className={`inline-flex items-center gap-1 px-2.5 py-1 bg-green-tint text-[#1e5c33] font-mono font-bold rounded-full ${size}`}
+      >
+        <CheckIcon width={9} height={9} />
+        VERIFICADO
+      </span>
+    );
+  }
   return (
     <span
-      className={`inline-flex items-center gap-1 px-2.5 py-1 bg-green-tint text-[#1e5c33] font-mono font-bold rounded-full ${
-        small ? "text-[9px]" : "text-[9.5px]"
-      }`}
+      className={`inline-flex items-center gap-1 px-2.5 py-1 bg-amber-tint text-amber font-mono font-bold rounded-full ${size}`}
     >
-      <CheckIcon width={9} height={9} />
-      VERIFICADO
+      <ClockIcon width={9} height={9} />
+      NECESSITA REVISÃO
     </span>
   );
 }

@@ -9,13 +9,13 @@ export const metadata: Metadata = {
 };
 
 const KITS = [
-  { title: "Kit 0 — No bolso", goal: "Sobreviver e alcançar um local seguro", href: null },
-  { title: "Kit 1 — 10 minutos", goal: "Sair de casa ou do abrigo rapidamente", href: null },
+  { title: "Kit 0 — No bolso", goal: "Sobreviver e alcançar um local seguro", href: "/prepare/kits/bolso" },
+  { title: "Kit 1 — 10 minutos", goal: "Sair de casa ou do abrigo rapidamente", href: "/prepare/kits/10min" },
   { title: "Kit 2 — 72 horas", goal: "Sobreviver sem serviços básicos por alguns dias", href: "/prepare/kits/72h" },
-  { title: "Kit 3 — 14 dias", goal: "Atravessar uma interrupção prolongada", href: null },
-  { title: "Kit 4 — 30 dias", goal: "Viver com abastecimento irregular", href: null },
-  { title: "Kit 5 — 90 dias", goal: "Começar a deixar de depender da cadeia de abastecimento", href: null },
-  { title: "Kit 6 — Longo prazo", goal: "Continuidade — não é uma mochila, é infraestrutura", href: null },
+  { title: "Kit 3 — 14 dias", goal: "Atravessar uma interrupção prolongada", href: "/prepare/kits/14dias" },
+  { title: "Kit 4 — 30 dias", goal: "Viver com abastecimento irregular", href: "/prepare/kits/30dias" },
+  { title: "Kit 5 — 90 dias", goal: "Começar a deixar de depender da cadeia de abastecimento", href: "/prepare/kits/90dias" },
+  { title: "Kit 6 — Longo prazo", goal: "Continuidade — não é uma mochila, é infraestrutura", href: "/prepare/kits/longo-prazo" },
 ];
 
 export default function PreparePage() {
@@ -67,6 +67,23 @@ export default function PreparePage() {
         </div>
 
         <div className="flex flex-col gap-2">
+          <Link
+            href="/prepare/kits/documentos"
+            className="flex items-center gap-3 p-3.5 bg-white border border-border rounded-[3px]"
+          >
+            <div className="flex-1">
+              <div className="font-semibold text-[13px] text-ink">
+                Checklist de documentos
+              </div>
+              <div className="text-[11px] text-[#5b584f] mt-0.5">
+                Cópias offline e impressas do que importa
+              </div>
+            </div>
+            <ChevronRightIcon className="text-[#b0aa96]" width={16} height={16} />
+          </Link>
+        </div>
+
+        <div className="flex flex-col gap-2">
           <div className="font-mono text-[10px] font-semibold tracking-widest text-muted">
             FERRAMENTAS
           </div>
@@ -80,6 +97,34 @@ export default function PreparePage() {
               </div>
               <div className="text-[11px] text-[#5b584f] mt-0.5">
                 Pessoas, dias e clima → volume necessário
+              </div>
+            </div>
+            <ChevronRightIcon className="text-[#b0aa96]" width={16} height={16} />
+          </Link>
+          <Link
+            href="/tools/energy"
+            className="flex items-center gap-3 p-3.5 bg-white border border-border rounded-[3px]"
+          >
+            <div className="flex-1">
+              <div className="font-semibold text-[13px] text-ink">
+                Calculadora de energia
+              </div>
+              <div className="text-[11px] text-[#5b584f] mt-0.5">
+                Bateria, equipamentos e consumo → autonomia
+              </div>
+            </div>
+            <ChevronRightIcon className="text-[#b0aa96]" width={16} height={16} />
+          </Link>
+          <Link
+            href="/tools/food"
+            className="flex items-center gap-3 p-3.5 bg-white border border-border rounded-[3px]"
+          >
+            <div className="flex-1">
+              <div className="font-semibold text-[13px] text-ink">
+                Calculadora de alimentação
+              </div>
+              <div className="text-[11px] text-[#5b584f] mt-0.5">
+                Pessoas, calorias e estoque → duração estimada
               </div>
             </div>
             <ChevronRightIcon className="text-[#b0aa96]" width={16} height={16} />

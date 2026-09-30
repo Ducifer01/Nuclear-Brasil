@@ -54,7 +54,7 @@ export default async function LearnArticlePage({
             >
               {RISK_LABEL[article.riskLevel]}
             </span>
-            <VerifiedBadge />
+            <VerifiedBadge status={article.status} />
             <span className="px-2.5 py-1 bg-panel text-[#5b584f] font-mono text-[9.5px] font-bold rounded-full">
               NÍVEL {article.authorityLevel}
             </span>

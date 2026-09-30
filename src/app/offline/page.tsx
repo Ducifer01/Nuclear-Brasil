@@ -66,8 +66,8 @@ export default function OfflinePage() {
           />
           <Row
             icon={PrintIcon}
-            title="Imprimir / salvar como PDF"
-            desc="Manual de bolso: emergência, água, abrigo — pronto para impressora"
+            title="Imprimir manual"
+            desc="Emergência, todos os artigos e kits — pronto para impressora"
             action={
               <Link
                 href="/print"
@@ -93,11 +93,14 @@ export default function OfflinePage() {
           <Row
             icon={DocumentIcon}
             title="Manual completo (PDF)"
-            desc="Todas as seções do manual — chega quando o conteúdo completo existir"
+            desc={'Todos os artigos e kits — use "Salvar como PDF" na tela de impressão'}
             action={
-              <span className="px-2.5 py-1.5 bg-panel-2 rounded-[2px] text-muted font-semibold text-[10px]">
-                EM BREVE
-              </span>
+              <Link
+                href="/print"
+                className="px-2.5 py-1.5 bg-ink rounded-[2px] text-paper font-semibold text-[10px]"
+              >
+                ABRIR
+              </Link>
             }
           />
           <Row

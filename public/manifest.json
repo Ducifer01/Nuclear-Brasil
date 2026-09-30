@@ -1,0 +1,38 @@
+{
+  "name": "Nuclear Survival",
+  "short_name": "Nuclear Survival",
+  "description": "Biblioteca offline-first de sobrevivência civil e continuidade, com foco inicial em emergências nucleares e radiológicas.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#15181B",
+  "theme_color": "#15181B",
+  "lang": "pt-BR",
+  "categories": ["safety", "utilities", "education"],
+  "icons": [
+    {
+      "src": "/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Emergência agora",
+      "url": "/emergency",
+      "description": "Ver o que fazer imediatamente"
+    },
+    {
+      "name": "Kit 72 horas",
+      "url": "/prepare/kits/72h"
+    }
+  ]
+}

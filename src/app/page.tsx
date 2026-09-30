@@ -1,69 +1,131 @@
-import Image from "next/image";
+import Link from "next/link";
+import AppShell from "@/components/AppShell";
+import {
+  TrefoilIcon,
+  BookIcon,
+  ToolboxIcon,
+  ChevronRightIcon,
+  DownloadIcon,
+} from "@/components/icons";
 
-export default function Home() {
+const MODES = [
+  {
+    href: "/emergency",
+    title: "EMERGÊNCIA",
+    desc: "Ação imediata, passo a passo",
+    icon: TrefoilIcon,
+    tint: "bg-red-tint text-red",
+  },
+  {
+    href: "/learn",
+    title: "APRENDER",
+    desc: "Conhecimento aprofundado, com fontes",
+    icon: BookIcon,
+    tint: "bg-teal-tint text-teal",
+  },
+  {
+    href: "/prepare",
+    title: "PREPARAR",
+    desc: "Kits, checklists e planejamento",
+    icon: ToolboxIcon,
+    tint: "bg-amber-tint text-amber",
+  },
+];
+
+export default function HomePage() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+    <AppShell>
+      <div className="max-w-md mx-auto px-5 py-5 flex flex-col gap-5">
+        <div className="bg-red rounded-[3px] p-5 pb-4 flex flex-col gap-3">
+          <div>
+            <h1 className="font-display font-black text-[19px] leading-tight text-[#faeeec]">
+              Isso é uma emergência agora?
+            </h1>
+            <p className="text-[12px] text-[#f3d3ce] mt-1.5">
+              Sem cadastro. Sem internet. Sem espera.
+            </p>
+          </div>
+          <div className="flex gap-2">
+            <Link
+              href="/emergency"
+              className="flex-[1.5] text-center bg-paper text-[#7a1b15] font-semibold text-[12.5px] py-3 px-2 rounded-[2px]"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              SIM — VER O QUE FAZER
+            </Link>
+            <Link
+              href="/learn"
+              className="flex-1 text-center text-[#faeeec] font-semibold text-[12px] py-3 px-2 rounded-[2px] border border-[#dd8b85]"
             >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+              NÃO, APRENDER
+            </Link>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+        <div className="flex flex-col gap-2.5">
+          {MODES.map(({ href, title, desc, icon: Icon, tint }) => (
+            <Link
+              key={href}
+              href={href}
+              className="flex items-center gap-3 p-3.5 bg-white border border-border rounded-[3px]"
+            >
+              <div
+                className={`w-10 h-10 rounded-[3px] flex items-center justify-center shrink-0 ${tint}`}
+              >
+                <Icon width={20} height={20} />
+              </div>
+              <div className="flex-1">
+                <div className="font-display font-extrabold text-[13.5px] tracking-wide text-ink">
+                  {title}
+                </div>
+                <div className="text-[11.5px] text-[#5b584f] mt-0.5">{desc}</div>
+              </div>
+              <ChevronRightIcon className="text-[#b0aa96]" />
+            </Link>
+          ))}
         </div>
-      </main>
-    </div>
+
+        <div className="flex flex-col gap-2">
+          <div className="font-mono text-[10px] font-semibold tracking-widest text-muted">
+            CONTINUAR PREPARANDO
+          </div>
+          <div className="flex gap-2 flex-wrap">
+            <Link
+              href="/prepare/kits/72h"
+              className="px-3 py-1.5 bg-white border border-border rounded-full text-[11.5px] font-semibold text-ink"
+            >
+              Kit 72h
+            </Link>
+            <Link
+              href="/learn/agua"
+              className="px-3 py-1.5 bg-white border border-border rounded-full text-[11.5px] font-semibold text-ink"
+            >
+              Água
+            </Link>
+            <Link
+              href="/learn/fallout"
+              className="px-3 py-1.5 bg-white border border-border rounded-full text-[11.5px] font-semibold text-ink"
+            >
+              Fallout
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      <Link
+        href="/offline"
+        className="flex items-center gap-3 px-5 py-3.5 bg-ink border-t border-border max-w-md mx-auto md:rounded-[3px] md:mb-5"
+      >
+        <DownloadIcon className="text-paper" />
+        <div className="flex-1">
+          <div className="font-semibold text-[12.5px] text-paper">
+            Baixar para usar offline
+          </div>
+          <div className="text-[10.5px] text-[#b7b3a4] mt-0.5">
+            Funciona sem internet depois de baixado
+          </div>
+        </div>
+        <ChevronRightIcon className="text-[#b7b3a4]" width={16} height={16} />
+      </Link>
+    </AppShell>
   );
 }

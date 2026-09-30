@@ -60,8 +60,10 @@ export default function LearnIndexPage() {
             EM DESENVOLVIMENTO
           </div>
           <p className="text-[11.5px] text-[#5b584f] mt-1">
-            Camadas regionais do Brasil (Norte, Nordeste, Centro-Oeste,
-            Sudeste, Sul) e o manual completo em PDF/ZIP chegam na v1.0.
+            O artigo de camadas regionais do Brasil está em revisão — fontes
+            específicas por região (clima, água, agricultura) ainda serão
+            adicionadas. O pacote ZIP completo para download também está em
+            desenvolvimento.
           </p>
         </div>
       </div>

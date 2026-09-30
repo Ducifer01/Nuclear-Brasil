@@ -20,6 +20,7 @@ import { animais } from "./animais";
 import { vetoresPragas } from "./vetores-pragas";
 import { saudeMental } from "./saude-mental";
 import { comunidade } from "./comunidade";
+import { regioesBrasil } from "./regioes-brasil";
 
 export const learnArticles: LearnArticle[] = [
   abrigo,
@@ -43,6 +44,7 @@ export const learnArticles: LearnArticle[] = [
   vetoresPragas,
   saudeMental,
   comunidade,
+  regioesBrasil,
 ];
 
 export function getLearnArticle(slug: string): LearnArticle | undefined {

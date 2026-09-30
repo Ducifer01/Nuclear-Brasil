@@ -13,6 +13,13 @@ import { ferramentas } from "./ferramentas";
 import { agricultura } from "./agricultura";
 import { longoPrazo } from "./longo-prazo";
 import { brasil } from "./brasil";
+import { saudeDental } from "./saude-dental";
+import { navegacao } from "./navegacao";
+import { documentos } from "./documentos";
+import { animais } from "./animais";
+import { vetoresPragas } from "./vetores-pragas";
+import { saudeMental } from "./saude-mental";
+import { comunidade } from "./comunidade";
 
 export const learnArticles: LearnArticle[] = [
   abrigo,
@@ -29,6 +36,13 @@ export const learnArticles: LearnArticle[] = [
   agricultura,
   longoPrazo,
   brasil,
+  saudeDental,
+  navegacao,
+  documentos,
+  animais,
+  vetoresPragas,
+  saudeMental,
+  comunidade,
 ];
 
 export function getLearnArticle(slug: string): LearnArticle | undefined {

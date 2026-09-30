@@ -60,9 +60,8 @@ export default function LearnIndexPage() {
             EM DESENVOLVIMENTO
           </div>
           <p className="text-[11.5px] text-[#5b584f] mt-1">
-            Saúde dental, navegação, documentos, animais, vetores e pragas,
-            saúde mental, comunidade e as camadas regionais do Brasil chegam
-            nas próximas versões.
+            Camadas regionais do Brasil (Norte, Nordeste, Centro-Oeste,
+            Sudeste, Sul) e o manual completo em PDF/ZIP chegam na v1.0.
           </p>
         </div>
       </div>

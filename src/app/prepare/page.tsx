@@ -67,6 +67,23 @@ export default function PreparePage() {
         </div>
 
         <div className="flex flex-col gap-2">
+          <Link
+            href="/prepare/kits/documentos"
+            className="flex items-center gap-3 p-3.5 bg-white border border-border rounded-[3px]"
+          >
+            <div className="flex-1">
+              <div className="font-semibold text-[13px] text-ink">
+                Checklist de documentos
+              </div>
+              <div className="text-[11px] text-[#5b584f] mt-0.5">
+                Cópias offline e impressas do que importa
+              </div>
+            </div>
+            <ChevronRightIcon className="text-[#b0aa96]" width={16} height={16} />
+          </Link>
+        </div>
+
+        <div className="flex flex-col gap-2">
           <div className="font-mono text-[10px] font-semibold tracking-widest text-muted">
             FERRAMENTAS
           </div>

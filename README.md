@@ -59,7 +59,9 @@ docs/
 
 ## Status de implementação
 
-O projeto já cobre v0.1 a v0.5 do roadmap (§73):
+O projeto cobre o conteúdo de todas as versões v0.1 a v1.0 do roadmap
+(§73), com 21 artigos em "Aprender", 7 kits com checklist interativa e 3
+calculadoras determinísticas:
 
 | Seção do roadmap | Status |
 | --- | --- |
@@ -71,13 +73,14 @@ O projeto já cobre v0.1 a v0.5 do roadmap (§73):
 | Energia, Ferramentas, Kits 0/1/3/4/5/6 | ✅ artigos + checklists + calculadora de energia (v0.3) |
 | Agricultura/produção, Longo prazo/Continuidade | ✅ artigos completos (v0.4) |
 | Camada Brasil (SIPRON, CNEN, Defesa Civil) | ✅ artigo dedicado + fontes (v0.5) |
-| Kit 72h e demais kits (0, 1, 3, 4, 5, 6) | ✅ checklists interativas, progresso salvo no aparelho (localStorage) |
+| Saúde dental, Navegação, Documentos, Animais, Vetores/pragas, Saúde mental, Comunidade | ✅ artigos completos (v1.0) |
+| Kits 0 a 6 + checklist de documentos | ✅ checklists interativas, progresso salvo no aparelho (localStorage) |
 | Calculadoras de água, energia e alimentação | ✅ determinísticas |
 | Fontes (`/sources`) | ✅ |
 | Baixar offline (`/offline`) | ✅ PWA instalável + versão texto real; PDF completo e ZIP marcados "em breve" (exigem geração de manual completo) |
 | Impressão (`/print`) | ✅ |
 | Modo baixa energia (`/low-power`) | ✅ |
-| Saúde dental, navegação, documentos, animais, vetores/pragas, saúde mental, comunidade, personalização, camadas regionais (Norte/Nordeste/Centro-Oeste/Sudeste/Sul) | ⏳ v1.0 — manual completo + pacote offline completo, conforme roadmap §73 |
+| Camadas regionais do Brasil (Norte/Nordeste/Centro-Oeste/Sudeste/Sul), manual completo em PDF/ZIP, EPUB, personalização | ⏳ aprofundamento contínuo — o conteúdo textual do roadmap está coberto; geração de PDF/ZIP completo e regionalização ficam para iterações seguintes |
 
 Este projeto **não** inclui painel administrativo, autenticação, newsletter
 ou sistema de alertas — essa direção foi avaliada e descartada em favor do

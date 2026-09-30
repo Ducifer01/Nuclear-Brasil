@@ -62,6 +62,10 @@ export default async function LearnArticlePage({
           <div className="text-[10.5px] text-muted mt-2">
             Última revisão: {article.lastReview} · Próxima revisão: {article.nextReview}
           </div>
+          <div className="text-[10.5px] text-muted mt-1">
+            v{article.version} · Autor: {article.author} · Revisor: {article.reviewer} · Criado em{" "}
+            {article.createdAt}
+          </div>
         </div>
 
         <div className="h-px bg-border" />

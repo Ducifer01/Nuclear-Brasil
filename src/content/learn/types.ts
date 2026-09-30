@@ -13,6 +13,16 @@ export type LearnArticle = {
   riskLevel: RiskLevel;
   authorityLevel: 1 | 2 | 3 | 4 | 5;
   status: ArticleStatus;
+  /** Versão editorial do artigo — roadmap §45 "Sistema de revisão". */
+  version: string;
+  /** Autor do artigo. Projeto sem IA no produto: a autoria é atribuída ao
+   * projeto ("Nuclear Survival"), não a uma pessoa física. */
+  author: string;
+  /** Revisor humano do artigo, ou "Pendente" enquanto não houver revisão
+   * humana artigo-a-artigo registrada. */
+  reviewer: string;
+  /** Data de criação do conteúdo (dd/mm/aaaa). */
+  createdAt: string;
   lastReview: string;
   nextReview: string;
   sources: SourceRef[];

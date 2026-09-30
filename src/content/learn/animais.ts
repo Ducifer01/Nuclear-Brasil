@@ -7,6 +7,10 @@ export const animais: LearnArticle = {
   riskLevel: "medio",
   authorityLevel: 4,
   status: "verified",
+  version: "1.0",
+  author: "Nuclear Survival",
+  reviewer: "Pendente",
+  createdAt: "30/09/2026",
   lastReview: "30/09/2026",
   nextReview: "30/03/2027",
   sources: [

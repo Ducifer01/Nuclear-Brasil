@@ -2,13 +2,32 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import PrintButton from "@/components/PrintButton";
 import { learnArticles } from "@/content/learn";
+import { kit0Items } from "@/content/kits/kit0";
+import { kit1Items } from "@/content/kits/kit1";
 import { kit72hItems } from "@/content/kits/kit72h";
+import { kit3Items } from "@/content/kits/kit3";
+import { kit4Items } from "@/content/kits/kit4";
+import { kit5Items } from "@/content/kits/kit5";
+import { kit6Items } from "@/content/kits/kit6";
+import { documentosItems } from "@/content/kits/documentos";
+import type { KitItem } from "@/content/kits/types";
 import { TrefoilIcon, ArrowLeftIcon } from "@/components/icons";
 
 export const metadata: Metadata = {
-  title: "Manual de bolso — impressão",
-  description: "Versão pronta para imprimir em preto e branco.",
+  title: "Manual completo — impressão",
+  description: "Versão pronta para imprimir em preto e branco, com todos os artigos e checklists.",
 };
+
+const KITS: { title: string; items: KitItem[] }[] = [
+  { title: "Kit 0 — No bolso", items: kit0Items },
+  { title: "Kit 1 — 10 minutos", items: kit1Items },
+  { title: "Kit 2 — 72 horas", items: kit72hItems },
+  { title: "Kit 3 — 14 dias", items: kit3Items },
+  { title: "Kit 4 — 30 dias", items: kit4Items },
+  { title: "Kit 5 — 90 dias", items: kit5Items },
+  { title: "Kit 6 — Longo prazo", items: kit6Items },
+  { title: "Checklist de documentos", items: documentosItems },
+];
 
 const NUCLEAR_STEPS = [
   "ENTRE EM UM EDIFÍCIO.",
@@ -34,10 +53,10 @@ export default function PrintPage() {
           <TrefoilIcon width={24} height={24} />
           <div>
             <div className="font-display font-black text-lg">
-              NUCLEAR SURVIVAL — EMERGÊNCIA
+              NUCLEAR SURVIVAL — MANUAL COMPLETO
             </div>
             <div className="text-[11px] text-neutral-600">
-              Manual de bolso · gerado para uso sem internet
+              Gerado no seu aparelho para uso sem internet — nenhum dado é enviado a servidor
             </div>
           </div>
         </header>
@@ -56,15 +75,22 @@ export default function PrintPage() {
           </p>
         </section>
 
-        <section>
-          <h2 className="font-display font-extrabold text-base mb-2">
-            02 — Kit 72 horas
+        <section className="break-inside-avoid">
+          <h2 className="font-display font-extrabold text-base mb-3">
+            02 — Kits de preparação
           </h2>
-          <div className="grid grid-cols-2 gap-x-6 gap-y-1 text-[12.5px]">
-            {kit72hItems.map((item) => (
-              <div key={item.id}>
-                ☐ {item.label}{" "}
-                <span className="text-neutral-500">— {item.hint}</span>
+          <div className="flex flex-col gap-4">
+            {KITS.map((kit) => (
+              <div key={kit.title} className="break-inside-avoid">
+                <h3 className="font-semibold text-[13px] mb-1">{kit.title}</h3>
+                <div className="grid grid-cols-2 gap-x-6 gap-y-1 text-[12.5px]">
+                  {kit.items.map((item) => (
+                    <div key={item.id}>
+                      ☐ {item.label}{" "}
+                      <span className="text-neutral-500">— {item.hint}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
             ))}
           </div>

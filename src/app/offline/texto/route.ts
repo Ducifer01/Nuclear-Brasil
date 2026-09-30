@@ -1,6 +1,25 @@
 import { learnArticles } from "@/content/learn";
+import { kit0Items } from "@/content/kits/kit0";
+import { kit1Items } from "@/content/kits/kit1";
 import { kit72hItems } from "@/content/kits/kit72h";
+import { kit3Items } from "@/content/kits/kit3";
+import { kit4Items } from "@/content/kits/kit4";
+import { kit5Items } from "@/content/kits/kit5";
+import { kit6Items } from "@/content/kits/kit6";
+import { documentosItems } from "@/content/kits/documentos";
+import type { KitItem } from "@/content/kits/types";
 import { RISK_LABEL } from "@/content/learn/types";
+
+const KITS: { title: string; items: KitItem[] }[] = [
+  { title: "Kit 0 — No bolso", items: kit0Items },
+  { title: "Kit 1 — 10 minutos", items: kit1Items },
+  { title: "Kit 2 — 72 horas", items: kit72hItems },
+  { title: "Kit 3 — 14 dias", items: kit3Items },
+  { title: "Kit 4 — 30 dias", items: kit4Items },
+  { title: "Kit 5 — 90 dias", items: kit5Items },
+  { title: "Kit 6 — Longo prazo", items: kit6Items },
+  { title: "Checklist de documentos", items: documentosItems },
+];
 
 const NUCLEAR_STEPS = [
   "ANTES: saiba onde se abrigar em casa, trabalho e escola. Monte o Kit 72h. Combine ponto de encontro e contato fora da região.",
@@ -28,12 +47,15 @@ function buildText(): string {
   lines.push("");
   lines.push("=".repeat(60));
   lines.push("");
-  lines.push("## KIT 72 HORAS");
+  lines.push("## KITS DE PREPARAÇÃO");
   lines.push("");
-  for (const item of kit72hItems) {
-    lines.push(`[ ] ${item.label} — ${item.hint}`);
+  for (const kit of KITS) {
+    lines.push(`### ${kit.title}`);
+    for (const item of kit.items) {
+      lines.push(`[ ] ${item.label} — ${item.hint}`);
+    }
+    lines.push("");
   }
-  lines.push("");
   lines.push("=".repeat(60));
   lines.push("");
   lines.push("## APRENDER");

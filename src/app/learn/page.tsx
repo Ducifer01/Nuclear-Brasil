@@ -60,9 +60,9 @@ export default function LearnIndexPage() {
             EM DESENVOLVIMENTO
           </div>
           <p className="text-[11.5px] text-[#5b584f] mt-1">
-            Saneamento, primeiros socorros, infecções, alimentação, energia,
-            ferramentas e os módulos de longo prazo chegam nas próximas
-            versões.
+            Saúde dental, navegação, documentos, animais, vetores e pragas,
+            saúde mental, comunidade e as camadas regionais do Brasil chegam
+            nas próximas versões.
           </p>
         </div>
       </div>

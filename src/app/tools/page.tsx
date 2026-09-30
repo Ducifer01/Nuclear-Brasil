@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import AppShell from "@/components/AppShell";
-import { ChevronRightIcon, ClockIcon, DropletIcon } from "@/components/icons";
+import { BoltIcon, ChevronRightIcon, ClockIcon, DropletIcon } from "@/components/icons";
 
 export const metadata: Metadata = {
   title: "Ferramentas",
@@ -41,19 +41,53 @@ export default function ToolsIndexPage() {
             <ChevronRightIcon className="text-[#b0aa96]" width={16} height={16} />
           </Link>
 
-          {["Calculadora de energia", "Calculadora de alimentação", "Gerador de checklist"].map(
-            (title) => (
-              <div
-                key={title}
-                className="flex items-center gap-3 p-3.5 bg-panel border border-[#ddd6c2] rounded-[3px] opacity-75"
-              >
-                <div className="w-9 h-9 rounded-[3px] bg-panel-2 text-muted flex items-center justify-center shrink-0">
-                  <ClockIcon width={16} height={16} />
-                </div>
-                <div className="font-semibold text-[13px] text-[#5b584f]">{title}</div>
+          <Link
+            href="/tools/energy"
+            className="flex items-center gap-3 p-3.5 bg-white border border-border rounded-[3px]"
+          >
+            <div className="w-9 h-9 rounded-[3px] bg-amber-tint text-amber flex items-center justify-center shrink-0">
+              <BoltIcon width={18} height={18} />
+            </div>
+            <div className="flex-1">
+              <div className="font-semibold text-[13.5px] text-ink">
+                Calculadora de energia
               </div>
-            )
-          )}
+              <div className="text-[11px] text-[#5b584f] mt-0.5">
+                Bateria, equipamentos e consumo → autonomia
+              </div>
+            </div>
+            <ChevronRightIcon className="text-[#b0aa96]" width={16} height={16} />
+          </Link>
+
+          <Link
+            href="/tools/food"
+            className="flex items-center gap-3 p-3.5 bg-white border border-border rounded-[3px]"
+          >
+            <div className="w-9 h-9 rounded-[3px] bg-teal-tint text-teal flex items-center justify-center shrink-0">
+              <ClockIcon width={18} height={18} />
+            </div>
+            <div className="flex-1">
+              <div className="font-semibold text-[13.5px] text-ink">
+                Calculadora de alimentação
+              </div>
+              <div className="text-[11px] text-[#5b584f] mt-0.5">
+                Pessoas, calorias e estoque → duração estimada
+              </div>
+            </div>
+            <ChevronRightIcon className="text-[#b0aa96]" width={16} height={16} />
+          </Link>
+
+          {["Gerador de checklist"].map((title) => (
+            <div
+              key={title}
+              className="flex items-center gap-3 p-3.5 bg-panel border border-[#ddd6c2] rounded-[3px] opacity-75"
+            >
+              <div className="w-9 h-9 rounded-[3px] bg-panel-2 text-muted flex items-center justify-center shrink-0">
+                <ClockIcon width={16} height={16} />
+              </div>
+              <div className="font-semibold text-[13px] text-[#5b584f]">{title}</div>
+            </div>
+          ))}
         </div>
       </div>
     </AppShell>

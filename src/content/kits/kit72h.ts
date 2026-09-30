@@ -1,8 +1,6 @@
-export type KitItem = {
-  id: string;
-  label: string;
-  hint: string;
-};
+import type { KitItem } from "./types";
+
+export type { KitItem } from "./types";
 
 export const kit72hItems: KitItem[] = [
   { id: "agua", label: "Água potável (12 L)", hint: "4 L por pessoa/dia × 3 dias" },

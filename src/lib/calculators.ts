@@ -45,3 +45,73 @@ export function calculateWater(input: WaterInput): WaterResult {
 function round1(n: number): number {
   return Math.round(n * 10) / 10;
 }
+
+export type EnergyAppliance = {
+  id: string;
+  name: string;
+  watts: number;
+  hoursPerDay: number;
+};
+
+export type EnergyInput = {
+  batteryWh: number;
+  appliances: EnergyAppliance[];
+};
+
+export type EnergyResult = {
+  dailyWh: number;
+  autonomyDays: number;
+  perApplianceWh: { id: string; name: string; wh: number }[];
+};
+
+/** Cálculo determinístico — sem IA, sem rede. Ver roadmap §36 "Simuladores". */
+export function calculateEnergy(input: EnergyInput): EnergyResult {
+  const batteryWh = Math.max(0, input.batteryWh);
+  const perApplianceWh = input.appliances.map((a) => ({
+    id: a.id,
+    name: a.name,
+    wh: Math.max(0, a.watts) * Math.max(0, a.hoursPerDay),
+  }));
+  const dailyWh = perApplianceWh.reduce((sum, a) => sum + a.wh, 0);
+  const autonomyDays = dailyWh > 0 ? batteryWh / dailyWh : 0;
+
+  return {
+    dailyWh: round1(dailyWh),
+    autonomyDays: round1(autonomyDays),
+    perApplianceWh: perApplianceWh.map((a) => ({ ...a, wh: round1(a.wh) })),
+  };
+}
+
+export type FoodInput = {
+  people: number;
+  caloriesPerPersonPerDay: number;
+  storedCalories: number;
+};
+
+export type FoodResult = {
+  dailyCalories: number;
+  autonomyDays: number;
+  deficitCalories: number;
+};
+
+const DEFAULT_CALORIES_PER_PERSON_PER_DAY = 2000;
+
+/** Cálculo determinístico — sem IA, sem rede. Ver roadmap §36 "Simuladores". */
+export function calculateFood(input: FoodInput): FoodResult {
+  const people = Math.max(0, input.people);
+  const caloriesPerPerson =
+    input.caloriesPerPersonPerDay > 0
+      ? input.caloriesPerPersonPerDay
+      : DEFAULT_CALORIES_PER_PERSON_PER_DAY;
+  const stored = Math.max(0, input.storedCalories);
+
+  const dailyCalories = people * caloriesPerPerson;
+  const autonomyDays = dailyCalories > 0 ? stored / dailyCalories : 0;
+  const deficitCalories = Math.max(0, dailyCalories - stored);
+
+  return {
+    dailyCalories: round1(dailyCalories),
+    autonomyDays: round1(autonomyDays),
+    deficitCalories: round1(deficitCalories),
+  };
+}

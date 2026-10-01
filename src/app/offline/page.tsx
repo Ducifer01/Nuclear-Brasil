@@ -1,12 +1,15 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import AppShell from "@/components/AppShell";
+import DownloadZipButton from "@/components/DownloadZipButton";
+import DownloadEpubButton from "@/components/DownloadEpubButton";
 import {
   CodeIcon,
   PrintIcon,
   TextLinesIcon,
   DocumentIcon,
   ArchiveIcon,
+  BookIcon,
 } from "@/components/icons";
 
 export const metadata: Metadata = {
@@ -106,12 +109,14 @@ export default function OfflinePage() {
           <Row
             icon={ArchiveIcon}
             title="Pacote ZIP completo"
-            desc="index.html + conteúdo + PDFs + checklists"
-            action={
-              <span className="px-2.5 py-1.5 bg-panel-2 rounded-[2px] text-muted font-semibold text-[10px]">
-                EM BREVE
-              </span>
-            }
+            desc="index.html + conteúdo + checklists, gerado no seu aparelho"
+            action={<DownloadZipButton />}
+          />
+          <Row
+            icon={BookIcon}
+            title="Manual completo (EPUB)"
+            desc="Todos os artigos, para ler em qualquer leitor de e-book"
+            action={<DownloadEpubButton />}
           />
         </div>
 

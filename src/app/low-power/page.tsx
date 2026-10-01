@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ReactMarkdown from "react-markdown";
 import { getLearnArticle } from "@/content/learn";
 import { BatteryLowIcon } from "@/components/icons";
 
@@ -48,17 +49,8 @@ export default async function LowPowerPage({
               {article.title}
             </div>
           </div>
-          <div className="mt-6 flex flex-col gap-5 flex-1">
-            <div>
-              <div className="text-[9.5px] text-[#8a8677] mb-1">O QUE SABEMOS</div>
-              <p className="text-[13px] leading-relaxed text-white">{article.weKnow}</p>
-            </div>
-            <div>
-              <div className="text-[9.5px] text-[#8a8677] mb-1">RECOMENDADO</div>
-              <p className="text-[13px] leading-relaxed text-white">
-                {article.recommended}
-              </p>
-            </div>
+          <div className="mt-6 flex-1 text-[13px] leading-relaxed text-white [&_h2]:text-[14px] [&_h2]:font-bold [&_h2]:text-[#8a8677] [&_h2]:mt-4 [&_h2]:mb-1 [&_ul]:pl-4 [&_ul]:list-disc [&_ol]:pl-4 [&_ol]:list-decimal [&_li]:mt-1">
+            <ReactMarkdown>{article.body}</ReactMarkdown>
           </div>
         </>
       ) : (

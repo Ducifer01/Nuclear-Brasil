@@ -7,6 +7,10 @@ export const longoPrazo: LearnArticle = {
   riskLevel: "medio",
   authorityLevel: 4,
   status: "verified",
+  version: "1.0",
+  author: "Nuclear Survival",
+  reviewer: "Pendente",
+  createdAt: "30/09/2026",
   lastReview: "30/09/2026",
   nextReview: "30/03/2027",
   sources: [
@@ -19,17 +23,25 @@ export const longoPrazo: LearnArticle = {
       url: "https://www.iaea.org/topics/emergency-preparedness-and-response",
     },
   ],
-  weKnow:
-    "Quando energia, água encanada, internet e atendimento médico normal não voltam em poucos dias, a pergunta muda: deixa de ser \"como sobrevivo 3 dias\" e passa a ser \"como continuo vivendo\". Esse é o cenário de colapso prolongado — semanas, meses ou mais — e exige pensar em infraestrutura, não apenas em uma mochila de emergência.",
-  recommended:
-    "A ordem conceitual de prioridades em colapso longo é: água, abrigo, saneamento, saúde, alimentação, energia, comunicação, produção, manutenção e organização comunitária — mas o contexto real pode alterar essa ordem; não trate como ranking universal e rígido. Cada módulo (água, energia, alimentação etc.) deixa de ser um item comprado uma vez e passa a ser algo que precisa de manutenção contínua: reposição, reparo, checagem regular. Documentação pessoal (médica, de identidade, contatos) em cópia física passa a ter grande importância quando sistemas digitais podem estar indisponíveis.",
-  why:
-    "A ordem de prioridades reflete o tempo de sobrevida sem cada recurso: a falta de água mata em dias, a falta de abrigo adequado agrava exposição e doença rapidamente, enquanto a falta de comunicação ou produção têm impacto que se acumula ao longo de semanas e meses. Pensar em infraestrutura, não em itens isolados, reconhece que cada recurso depende de manutenção continuada para seguir funcionando.",
-  uncertain:
-    "A duração real de qualquer colapso é imprevisível, e a prioridade real entre módulos varia conforme clima, composição familiar, condições de saúde prévias e características da região — o modelo apresentado aqui é um ponto de partida conceitual, não uma previsão.",
-  myths: [
-    "\"Colapso longo é sobre sobreviver sozinho.\" — Organização comunitária (divisão de tarefas, cooperação, apoio a vulneráveis) tende a aumentar as chances de continuidade, não reduzi-las.",
-    "\"Se sobrevivi aos primeiros dias, o pior já passou.\" — Riscos de saúde (infecção, desnutrição, saúde mental) tendem a se acumular ao longo de semanas e meses, exigindo atenção contínua, não apenas nos primeiros dias.",
-    "\"Não dá para se preparar para algo tão incerto.\" — Preparação por camadas (módulos de água, abrigo, saúde, etc., cada um reforçando o seguinte) reduz risco mesmo sem saber exatamente qual cenário vai ocorrer.",
-  ],
+  body: `Existe um ponto, numa interrupção prolongada, em que a pergunta certa deixa de ser "como eu sobrevivo aos próximos três dias" e passa a ser "como eu continuo vivendo quando energia, água encanada, internet e atendimento médico normal simplesmente não voltam". Essa mudança de pergunta é o que separa preparação de emergência (uma mochila, um kit) de preparação para colapso longo (infraestrutura que precisa de manutenção contínua).
+
+## Por que a ordem de prioridades segue o tempo de sobrevida
+
+Água, abrigo, saneamento, saúde, alimentação, energia, comunicação, produção, manutenção, organização comunitária — essa ordem não é arbitrária, ela reflete quanto tempo o corpo ou a situação tolera a ausência de cada recurso. Falta de água mata em poucos dias; falta de abrigo adequado agrava exposição e doença em questão de horas a dias, dependendo do clima; já a falta de comunicação ou de capacidade de produção própria tem impacto que se acumula ao longo de semanas e meses, não de horas. Essa ordem é um ponto de partida conceitual, não um ranking fixo — clima, composição familiar e características da região podem inverter prioridades específicas, mas o raciocínio por trás dela (o que mata mais rápido vem primeiro) continua válido.
+
+## Por que "infraestrutura" é a palavra certa, não "itens"
+
+Um kit de emergência é algo que você monta uma vez e guarda. Um colapso longo transforma cada módulo — água, energia, alimentação — em algo que precisa de atenção contínua: reposição do que foi consumido, reparo do que quebrou, checagem regular do que ainda está funcionando. Pensar em "o que eu já tenho" é suficiente para 72 horas; pensar em "o que eu consigo manter funcionando indefinidamente" é o que colapso longo exige.
+
+## Por que documentação física ganha peso nesse cenário
+
+Sistemas digitais (nuvem, aplicativos, bancos de dados online) dependem de internet e de energia para funcionar — exatamente os dois recursos que podem estar indisponíveis num colapso longo. Documentos médicos, de identidade e contatos em cópia física continuam acessíveis independentemente do estado da infraestrutura digital. Essa não é uma recomendação sobre desconfiar de tecnologia; é reconhecer que redundância física cobre o cenário específico em que a tecnologia falha.
+
+## Por que isolamento tende a piorar as chances, não melhorar
+
+A ideia de que colapso longo é uma questão de sobreviver sozinho ignora como divisão de tarefas funciona na prática: um grupo cooperativo cobre mais funções simultâneas (vigilância, cuidado de crianças, produção, manutenção) do que uma pessoa ou família isolada consegue cobrir sozinha, simplesmente porque há mais pessoas disponíveis para fazer coisas diferentes ao mesmo tempo. Organização comunitária — mesmo informal, mesmo pequena — tende a aumentar a capacidade de continuidade, não reduzi-la.
+
+## Por que o risco não termina quando os primeiros dias passam
+
+Uma crença comum é que, superados os primeiros dias, "o pior já passou". Na prática, riscos de saúde como infecção, desnutrição progressiva e desgaste de saúde mental tendem a se acumular ao longo de semanas e meses de privação continuada — eles não aparecem de uma vez como um evento agudo, aparecem gradualmente, o que os torna mais fáceis de ignorar até que já estejam avançados. Atenção contínua a esses riscos, não apenas nos primeiros dias, é parte do que diferencia sobreviver uma emergência de atravessar um colapso longo.`,
 };

@@ -7,6 +7,10 @@ export const energia: LearnArticle = {
   riskLevel: "medio",
   authorityLevel: 4,
   status: "verified",
+  version: "1.0",
+  author: "Nuclear Survival",
+  reviewer: "Pendente",
+  createdAt: "30/09/2026",
   lastReview: "30/09/2026",
   nextReview: "30/03/2027",
   sources: [
@@ -15,17 +19,25 @@ export const energia: LearnArticle = {
       url: "https://www.iaea.org/topics/emergency-preparedness-and-response",
     },
   ],
-  weKnow:
-    "Energia em emergência tem três escalas diferentes: manter luz e comunicação funcionando nas primeiras horas/dias (lanternas, pilhas, power banks), sustentar equipamentos maiores por semanas (estações de energia, bateria, painel solar, gerador), e, em colapsos longos, gerar e manter energia de forma continuada, com manutenção e peças de reposição.",
-  recommended:
-    "Para o curto prazo, mantenha lanternas, pilhas sobressalentes e um power bank carregado como prioridade — isso cobre iluminação e comunicação básica. Para o médio prazo, avalie uma estação de energia portátil com painel solar dimensionado para os equipamentos essenciais (não para tudo que você usa no dia a dia), priorizando consumo mínimo. Geradores a combustível exigem ventilação externa obrigatória pelo risco de intoxicação por monóxido de carbono, e nunca devem operar em ambientes fechados. Para qualquer equipamento elétrico, conheça a potência (W) e o consumo de energia (Wh) dos aparelhos que pretende alimentar, para dimensionar a fonte corretamente.",
-  why:
-    "Dimensionar energia errado — subestimando consumo ou superestimando capacidade da bateria/gerador — é a causa mais comum de falha nesses sistemas em emergência. Entender tensão, corrente e potência permite calcular quanto tempo uma fonte específica sustenta um conjunto de equipamentos, evitando surpresas quando a energia é mais necessária.",
-  uncertain:
-    "A melhor combinação de fontes de energia (bateria, solar, gerador) depende do clima local, do orçamento disponível, do espaço para instalação e da duração esperada da interrupção — não existe uma solução única recomendável para todos os contextos.",
-  myths: [
-    "\"Gerador pode funcionar dentro de casa se a porta estiver aberta.\" — O monóxido de carbono se acumula rapidamente mesmo com ventilação parcial; geradores a combustão exigem operação totalmente ao ar livre, longe de janelas e entradas de ar.",
-    "\"Qualquer painel solar carrega qualquer bateria.\" — A compatibilidade de tensão, corrente e controlador de carga precisa ser verificada; ligações incorretas podem danificar equipamentos ou representar risco de incêndio.",
-    "\"Power bank grande substitui estação de energia.\" — Power banks atendem eletrônicos pequenos; equipamentos de maior consumo (geladeiras, ferramentas) exigem fontes com capacidade muito maior.",
-  ],
+  body: `Dimensionar energia errado — não saber quanto uma fonte realmente sustenta — é a causa mais comum de um sistema de energia de emergência falhar justamente quando mais se precisa dele. A base para evitar isso é entender uma única relação: energia consumida (Wh, watt-hora) é potência do aparelho (W) multiplicada pelo tempo de uso (horas). Com essa conta, qualquer pessoa consegue estimar se uma bateria ou gerador específico realmente cobre o que precisa, em vez de descobrir que não cobre no momento errado.
+
+## As três escalas do problema
+
+Energia em emergência não é um problema único — são três problemas de escala diferente que pedem soluções diferentes. Nas primeiras horas, o que importa é iluminação e comunicação básica: lanterna, pilhas sobressalentes, um power bank carregado. Essa escala resolve com itens pequenos e baratos. Em semanas, o problema muda para sustentar equipamentos maiores — uma estação de energia portátil, pilhas recarregáveis, um painel solar — dimensionados para os aparelhos essenciais, não para replicar o consumo normal da casa. Em meses ou mais, o problema se torna geração continuada, com manutenção e peças de reposição fazendo parte do planejamento, não um detalhe.
+
+## Por que "qualquer painel solar carrega qualquer bateria" é um erro caro
+
+Um sistema solar tem tensão, corrente e um controlador de carga que precisam ser compatíveis entre painel e bateria — ligar componentes incompatíveis não é apenas ineficiente, pode danificar o equipamento ou criar risco de incêndio. Antes de comprar qualquer peça do sistema isoladamente, confirme a compatibilidade entre painel, controlador e bateria como um conjunto, não como itens que se encaixam por definição.
+
+## Por que gerador a combustão exige ventilação total, não parcial
+
+Geradores movidos a combustível produzem monóxido de carbono, um gás que não tem cheiro e que se acumula em espaços fechados ou parcialmente fechados muito mais rápido do que a intuição sugere — uma porta aberta não troca ar rápido o suficiente para evitar acúmulo perigoso em uma garagem ou varanda fechada. A regra correta não é "ventilação", é operação totalmente ao ar livre, a uma distância segura de janelas e qualquer entrada de ar da casa — essa é a única forma de garantir que o gás não se acumule onde pessoas estão.
+
+## Por que um power bank grande não substitui uma estação de energia
+
+A diferença entre essas duas categorias não é só tamanho, é a escala de potência que cada uma entrega. Um power bank é dimensionado para eletrônicos pequenos (celular, lanterna) — ele simplesmente não tem a capacidade de corrente necessária para alimentar uma geladeira ou uma ferramenta elétrica, mesmo que sua capacidade total em Wh pareça grande no papel. Antes de decidir qual fonte comprar, identifique quais equipamentos específicos você precisa alimentar e a potência deles — essa informação, não o orçamento disponível, é o que determina qual categoria de fonte realmente resolve o problema.
+
+## Não existe uma combinação única certa
+
+Bateria, solar e gerador têm vantagens e limitações diferentes conforme clima local (painel solar depende de sol disponível), orçamento e espaço para instalação. A pergunta certa não é "qual é a melhor fonte de energia", é "qual combinação cobre os equipamentos que eu realmente preciso manter funcionando, pelo tempo que eu realisticamente posso esperar precisar". A calculadora de energia deste site ajuda a fazer essa conta a partir dos seus próprios equipamentos, em vez de uma estimativa genérica.`,
 };

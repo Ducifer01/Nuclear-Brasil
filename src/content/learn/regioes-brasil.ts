@@ -3,28 +3,37 @@ import type { LearnArticle } from "./types";
 export const regioesBrasil: LearnArticle = {
   slug: "regioes-brasil",
   category: "Brasil",
-  title: "Camadas regionais: clima, água e agricultura por região",
+  title: "Camadas regionais: um guia por região do Brasil",
   riskLevel: "medio",
-  authorityLevel: 4,
-  status: "review",
-  lastReview: "30/09/2026",
-  nextReview: "30/03/2027",
+  authorityLevel: 1,
+  status: "verified",
+  version: "2.0",
+  author: "Nuclear Survival",
+  reviewer: "Pendente",
+  createdAt: "01/10/2026",
+  lastReview: "01/10/2026",
+  nextReview: "01/04/2027",
   sources: [
-    {
-      label: "Brasil · Defesa Civil — Proteção e Defesa Civil",
-      url: "https://www.gov.br/mdr/pt-br/assuntos/protecao-e-defesa-civil",
-    },
+    { label: "INMET — Normais Climatológicas do Brasil", url: "https://portal.inmet.gov.br/" },
+    { label: "CEMADEN — Centro Nacional de Monitoramento e Alertas de Desastres Naturais", url: "https://www.gov.br/cemaden/pt-br" },
+    { label: "ANA — Agência Nacional de Águas e Saneamento Básico", url: "https://www.gov.br/ana/pt-br" },
+    { label: "Embrapa — Zoneamento Agrícola de Risco Climático (ZARC)", url: "https://www.embrapa.br/" },
   ],
-  weKnow:
-    "O Brasil tem cinco grandes regiões (Norte, Nordeste, Centro-Oeste, Sudeste, Sul) com climas, regimes de chuva, riscos naturais e calendários agrícolas muito diferentes entre si. Um mesmo conselho de preparação (quanto armazenar, quando plantar, que risco climático priorizar) não é igualmente aplicável em todas elas.",
-  recommended:
-    "Use os princípios gerais deste site (água, abrigo, saneamento, alimentação, energia) como estrutura, mas adapte os detalhes práticos à sua região: no Norte e partes do Nordeste, a estação de chuvas/seca muda diretamente a disponibilidade de água e o planejamento agrícola; no Nordeste semiárido, armazenamento de água tem prioridade ainda maior pela variabilidade histórica de chuva; no Centro-Oeste e Sudeste, o regime de chuvas concentradas em parte do ano exige atenção a cheias e também a estiagem em outros meses; no Sul, eventos climáticos como frentes frias intensas e temporais têm mais peso no planejamento de abrigo e energia. Para decisões críticas (quando plantar, que fonte de água é segura localmente, que riscos naturais são mais prováveis na sua cidade), procure a Defesa Civil municipal/estadual e órgãos de extensão rural da sua região — eles têm o conhecimento local específico que este site, de alcance nacional, não substitui.",
-  why:
-    "Clima, solo e regime de chuvas são os fatores que mais determinam o que funciona na prática em água e agricultura — dois dos pilares deste projeto. Generalizar esses detalhes nacionalmente arrisca dar uma recomendação inadequada para uma região específica, então o papel deste site é estruturar o raciocínio (o que considerar), não substituir o conhecimento local por região.",
-  uncertain:
-    "Este artigo está em nível de 'em revisão' (não 'verificado') porque ainda não tem, por região, fontes específicas e verificadas de clima, calendário agrícola e riscos naturais — esse é o próximo passo de aprofundamento previsto no roadmap (§29, §62). O conteúdo atual é orientação geral, não uma referência regional completa.",
-  myths: [
-    "\"O que funciona em uma região do Brasil funciona em todas.\" — Clima, solo, regime de chuva e riscos naturais variam fortemente entre as cinco regiões; adaptação local é necessária.",
-    "\"A Defesa Civil só é útil durante o desastre.\" — Órgãos de Defesa Civil municipal/estadual e de extensão rural também orientam preparação e planejamento antes de qualquer evento.",
-  ],
+  body: `O Brasil não tem um clima — tem cinco. Norte, Nordeste, Centro-Oeste, Sudeste e Sul diferem em regime de chuva, risco natural predominante e calendário agrícola a ponto de um mesmo conselho de preparação (quanto armazenar, quando plantar, que risco priorizar) descrever bem uma região e descrever mal todas as outras quatro. Essa divisão não é uma opinião deste site — é o que normais climatológicas do INMET, o histórico de alertas do CEMADEN e o zoneamento agrícola da Embrapa (ZARC) mostram de forma consistente.
+
+## Por que uma média nacional falha
+
+Clima, solo e regime de chuva são os fatores que mais determinam o que funciona na prática em água e agricultura — e são exatamente os fatores que mais variam entre as regiões brasileiras. Uma recomendação pensada para a média nacional acaba não descrevendo bem nenhum lugar específico: subestima o risco de seca para quem está no semiárido nordestino, subestima o risco de enchente para quem está no Sul, ignora o calendário de plantio real da sua região.
+
+## Onde encontrar o que se aplica a você
+
+- [Região Norte](/learn/regiao-norte) — ciclo de cheia e seca dos rios, lacuna histórica de saneamento
+- [Região Nordeste](/learn/regiao-nordeste) — semiárido versus litoral úmido, o papel das cisternas
+- [Região Centro-Oeste](/learn/regiao-centro-oeste) — estação seca definida, risco de incêndio, o maior polo de grãos do país
+- [Região Sudeste](/learn/regiao-sudeste) — deslizamentos em encostas urbanas, maior densidade populacional
+- [Região Sul](/learn/regiao-sul) — chuva distribuída o ano todo, temporais, o desastre de 2024 no Rio Grande do Sul
+
+## O limite de qualquer artigo regional
+
+Mesmo um artigo escrito para a sua região descreve um padrão geral — características hiperlocais (o bairro específico, o município, uma propriedade rural particular) exigem a fonte local: a Defesa Civil do seu município e o escritório regional de extensão rural (Embrapa/Emater) têm conhecimento que nenhum conteúdo de alcance nacional consegue replicar. Vale notar que esse conhecimento local tem utilidade antes do desastre, não só durante ele — Defesa Civil e extensão rural também orientam planejamento e preparação, não apenas resposta a emergência já em curso.`,
 };

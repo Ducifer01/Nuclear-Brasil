@@ -7,6 +7,10 @@ export const animais: LearnArticle = {
   riskLevel: "medio",
   authorityLevel: 4,
   status: "verified",
+  version: "1.0",
+  author: "Nuclear Survival",
+  reviewer: "Pendente",
+  createdAt: "30/09/2026",
   lastReview: "30/09/2026",
   nextReview: "30/03/2027",
   sources: [
@@ -15,16 +19,19 @@ export const animais: LearnArticle = {
       url: "https://www.who.int/teams/environment-climate-change-and-health/water-sanitation-and-health/environmental-health-in-emergencies",
     },
   ],
-  weKnow:
-    "Animais dependem inteiramente de seus tutores em uma emergência — eles não conseguem planejar, estocar ou se proteger sozinhos. O planejamento de água, alimentação e abrigo da família deve incluir os animais desde o início, não como um item à parte.",
-  recommended:
-    "Inclua os animais no cálculo de água e alimentos do domicílio, com reserva própria para eles. Em caso de contaminação externa (fallout, por exemplo), traga animais para dentro assim que possível e evite que eles circulem entre área potencialmente contaminada e área limpa, para não espalhar contaminação. Mantenha higiene básica e observe sinais de doença. Tutores devem reconhecer os limites do que podem fazer em casa — problemas de saúde além de cuidados básicos exigem atendimento veterinário assim que disponível, e não devem ser tratados com automedicação.",
-  why:
-    "Animais que circulam entre áreas contaminadas e limpas podem transportar material contaminante (poeira, fallout, resíduos) para dentro de casa, ampliando a exposição das pessoas. Reservar água e comida especificamente para os animais evita que o cálculo do estoque familiar fique subestimado quando a emergência chega.",
-  uncertain:
-    "As necessidades específicas variam muito por espécie, porte e número de animais — este artigo cobre princípios gerais, não protocolos específicos por espécie.",
-  myths: [
-    "\"Animais não precisam de água extra estocada, eles se viram.\" — Animais têm as mesmas necessidades básicas de água que pessoas, na proporção do seu porte, e dependem do tutor para isso em confinamento ou emergência.",
-    "\"Dá para tratar qualquer problema de saúde animal em casa com o que tiver disponível.\" — Cuidados básicos (higiene, observação, primeiros cuidados simples) têm seu lugar, mas problemas de saúde mais sérios exigem avaliação veterinária.",
-  ],
+  body: `Um animal doméstico não consegue estocar sua própria água, planejar sua própria fuga ou reconhecer sozinho um ambiente contaminado — ele depende inteiramente de decisões que o tutor toma por ele. Isso tem uma consequência direta de planejamento: água, alimento e abrigo para os animais não são um item extra a considerar depois, são parte do mesmo cálculo que você já faz para as pessoas da casa.
+
+## Por que subestimar a necessidade de água dos animais é um erro comum
+
+Animais têm necessidade de água proporcional ao próprio porte, da mesma forma que pessoas — a ideia de que "eles se viram" geralmente parte de observar animais em ambiente normal, com acesso livre a água, e não se aplica quando esse acesso está comprometido. Se o cálculo de água do domicílio não reserva volume específico para os animais, o estoque pensado para a família humana fica subestimado na prática — ou os animais ficam sem, ou a reserva humana é consumida mais rápido do que planejado.
+
+## Por que circulação entre áreas é o risco central em contaminação
+
+Em um cenário de contaminação externa — fallout é o exemplo mais extremo, mas vale para outros tipos de resíduo também — um animal que entra e sai de uma área exposta carrega material físico (poeira, partículas) no pelo e nas patas para dentro de casa, cada vez que entra. Trazer o animal para dentro assim que possível depois de um evento, e evitar que ele volte a circular entre área exposta e área limpa, é o que impede que ele se torne um vetor de contaminação para o ambiente que você está tentando manter seguro — o mesmo raciocínio aplicado a pessoas que removem a camada externa de roupa antes de entrar em área limpa.
+
+## Onde o cuidado do tutor termina e o veterinário começa
+
+Higiene básica, observação de comportamento e sinais visíveis de desconforto são coisas que qualquer tutor pode e deve fazer. O limite aparece quando o problema é mais sério do que isso — um sinal de doença que não melhora, um ferimento que não é superficial. Nesse ponto, automedicação ou tratamento improvisado em casa tem mais risco de piorar a situação do que de ajudar; a decisão correta é buscar atendimento veterinário assim que ele estiver disponível, tratando o cuidado doméstico como ponte até lá, não como substituto.
+
+Necessidades específicas variam bastante por espécie e porte — os princípios acima (reservar recursos, evitar contaminação cruzada, reconhecer os limites do cuidado doméstico) se aplicam de forma geral, mas não substituem protocolo específico para a espécie e porte do seu animal.`,
 };

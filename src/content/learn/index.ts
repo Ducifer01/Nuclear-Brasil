@@ -21,6 +21,11 @@ import { vetoresPragas } from "./vetores-pragas";
 import { saudeMental } from "./saude-mental";
 import { comunidade } from "./comunidade";
 import { regioesBrasil } from "./regioes-brasil";
+import { regiaoNorte } from "./regiao-norte";
+import { regiaoNordeste } from "./regiao-nordeste";
+import { regiaoCentroOeste } from "./regiao-centro-oeste";
+import { regiaoSudeste } from "./regiao-sudeste";
+import { regiaoSul } from "./regiao-sul";
 
 export const learnArticles: LearnArticle[] = [
   abrigo,
@@ -45,6 +50,11 @@ export const learnArticles: LearnArticle[] = [
   saudeMental,
   comunidade,
   regioesBrasil,
+  regiaoNorte,
+  regiaoNordeste,
+  regiaoCentroOeste,
+  regiaoSudeste,
+  regiaoSul,
 ];
 
 export function getLearnArticle(slug: string): LearnArticle | undefined {

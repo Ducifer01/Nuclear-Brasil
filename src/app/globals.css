@@ -56,3 +56,32 @@ body {
     background: #ffffff;
   }
 }
+
+/* Quick Cards — roadmap §64: cartões pequenos, recortáveis. */
+.print-card {
+  break-inside: avoid;
+}
+@media print {
+  .print-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .print-card {
+    width: 3in;
+    height: 5in;
+    page-break-inside: avoid;
+  }
+}
+
+/* Wall Posters — roadmap §64: uma folha grande por tema. */
+.print-poster {
+  min-height: 60vh;
+}
+@media print {
+  .print-poster {
+    height: 100vh;
+    page-break-after: always;
+  }
+  .print-poster:last-child {
+    page-break-after: auto;
+  }
+}

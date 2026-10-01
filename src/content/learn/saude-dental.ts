@@ -19,17 +19,21 @@ export const saudeDental: LearnArticle = {
       url: "https://www.who.int/teams/environment-climate-change-and-health/water-sanitation-and-health/environmental-health-in-emergencies",
     },
   ],
-  weKnow:
-    "Em cenários longos, quando atendimento odontológico profissional está limitado ou indisponível, prevenir é muito mais eficaz do que tentar improvisar tratamento. Um problema dental não tratado pode evoluir de dor leve para infecção grave, e infecções na região da boca podem se espalhar para outras partes do corpo.",
-  recommended:
-    "Mantenha escovação regular mesmo com água limitada — mesmo escovar sem pasta, usando apenas água limpa e escova (ou um pano limpo enrolado no dedo, na ausência de escova), já reduz acúmulo de placa. Guarde escovas em local seco e ventilado, sem contato entre cerdas de pessoas diferentes. Observe sinais de alerta — dor persistente, inchaço, sensibilidade a temperatura, sangramento gengival — e busque atendimento profissional assim que houver qualquer via de acesso, em vez de esperar o quadro piorar. Em caso de trauma dental (dente solto ou deslocado), evite manipular excessivamente e busque atendimento o quanto antes; o tempo entre o trauma e o atendimento profissional pode ser decisivo para salvar o dente.",
-  why:
-    "A cárie e a doença gengival são processos que avançam ao longo de dias a semanas de acúmulo de placa bacteriana; interromper esse acúmulo com escovação regular, mesmo básica, já reduz significativamente o risco. Infecções dentais não tratadas podem evoluir para abscessos, que representam risco de disseminação da infecção — por isso sinais de piora (inchaço, febre) justificam buscar atendimento com prioridade.",
-  uncertain:
-    "A eficácia de soluções improvisadas (escovação sem pasta, fio dental improvisado) varia por pessoa e não substitui acompanhamento odontológico regular quando ele volta a estar disponível.",
-  myths: [
-    "\"Sem pasta de dente, não adianta escovar.\" — A ação mecânica de remover placa com escova e água já tem benefício relevante, mesmo sem pasta.",
-    "\"Dor de dente que passa sozinha significa que o problema se resolveu.\" — Muitas vezes a dor diminui quando o nervo do dente morre, mas a infecção pode continuar progredindo; a ausência de dor não significa ausência de problema.",
-    "\"Dá para tratar uma infecção dentária só com antibiótico, sem avaliação profissional.\" — Antibiótico pode ajudar a controlar uma infecção temporariamente, mas não resolve a causa; a avaliação e o tratamento definitivo exigem atendimento odontológico.",
-  ],
+  body: `Um problema dental quase nunca começa como emergência — ele começa como placa bacteriana acumulada ao longo de dias ou semanas, e só se torna dor ou infecção depois de um processo que teve tempo de ser interrompido antes. Isso torna prevenção, não tratamento improvisado, a estratégia correta quando atendimento odontológico profissional está limitado ou indisponível.
+
+## Por que escovar sem pasta ainda vale a pena
+
+Cárie e doença gengival avançam porque placa bacteriana se acumula sobre o dente e a gengiva ao longo do tempo. O que remove essa placa é a ação mecânica de esfregar a superfície — a pasta de dente contribui com flúor e sabor, mas não é ela que remove a placa fisicamente, é a escovação. Por isso escovar com água e escova, sem pasta, ou mesmo com um pano limpo enrolado no dedo na ausência de escova, ainda interrompe o acúmulo que causaria o problema — a diferença de eficácia entre "com pasta" e "sem pasta" é bem menor do que entre "escovar" e "não escovar".
+
+## Por que a ausência de dor não significa que o problema passou
+
+Um padrão que confunde muita gente: a dor de um dente pode diminuir sozinha, não porque o problema melhorou, mas porque o nervo dentro do dente morreu — e um nervo morto não transmite mais dor, mesmo que a infecção ao redor dele continue avançando. Esse é o motivo pelo qual "a dor passou" não é um sinal confiável de melhora; os sinais que realmente importam são inchaço, sensibilidade a temperatura e sangramento gengival, que indicam atividade da infecção independentemente da dor.
+
+## Por que trauma dental tem janela de tempo
+
+Um dente deslocado ou arrancado por impacto tem uma janela de tempo em que a reimplantação profissional ainda tem chance real de sucesso — quanto mais tempo passa, menor essa chance. Isso significa que, diante de um trauma dental, a prioridade não é tentar resolver em casa, é buscar atendimento o mais rápido possível; manipular excessivamente o dente nesse meio tempo só reduz ainda mais a chance de um tratamento bem-sucedido depois.
+
+## Por que antibiótico sozinho não resolve
+
+Antibiótico pode conter temporariamente uma infecção dentária, reduzindo sintomas, mas não remove a causa física do problema (cárie, abscesso) — ele compra tempo, não cura. Tratar isso como solução definitiva adia o atendimento profissional necessário enquanto a causa continua presente, com risco de a infecção retornar, às vezes pior, quando o efeito do antibiótico passa.`,
 };

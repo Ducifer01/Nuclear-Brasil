@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import ReactMarkdown from "react-markdown";
 import type { LearnArticle } from "@/content/learn/types";
 import type { KitItem } from "@/content/kits/types";
 import PrintButton from "@/components/PrintButton";
@@ -152,16 +153,8 @@ export default function PrintSections({
             <h2 className="font-display font-extrabold text-base mb-2">
               {String(++sectionNumber).padStart(2, "0")} — {a.title}
             </h2>
-            <div className="flex flex-col gap-1.5 text-[12.5px]">
-              <p>
-                <strong>O que sabemos:</strong> {a.weKnow}
-              </p>
-              <p>
-                <strong>Recomendado:</strong> {a.recommended}
-              </p>
-              <p>
-                <strong>Mitos:</strong> {a.myths.join(" ")}
-              </p>
+            <div className="flex flex-col gap-1.5 text-[12.5px] [&_h2]:font-bold [&_h2]:mt-2 [&_ul]:pl-4 [&_ul]:list-disc [&_ol]:pl-4 [&_ol]:list-decimal">
+              <ReactMarkdown>{a.body}</ReactMarkdown>
             </div>
             <p className="text-[10.5px] text-neutral-600 mt-1.5">
               Fontes: {a.sources.map((s) => s.label).join(" · ")} · revisado em{" "}

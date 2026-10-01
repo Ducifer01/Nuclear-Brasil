@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import AppShell from "@/components/AppShell";
-import { TrefoilIcon, ChevronRightIcon, ClockIcon } from "@/components/icons";
+import { TrefoilIcon, ChevronRightIcon, FlameIcon, StormIcon, BoltIcon, DropletIcon, RadioIcon, CheckIcon } from "@/components/icons";
 
 export const metadata: Metadata = {
   title: "Emergência",
@@ -31,13 +31,43 @@ const NUCLEO = [
   },
 ];
 
-const EM_BREVE = [
-  "Incêndio",
-  "Desastre natural",
-  "Colapso de energia",
-  "Falha no abastecimento de água",
-  "Perda de comunicação",
-  "Colapso do atendimento",
+const OUTROS_CENARIOS = [
+  {
+    href: "/emergency/incendio",
+    title: "Incêndio",
+    desc: "Evacuação, fumaça, rotas de saída",
+    icon: FlameIcon,
+  },
+  {
+    href: "/emergency/desastre-natural",
+    title: "Desastre natural",
+    desc: "Enchente, deslizamento, sinais de risco",
+    icon: StormIcon,
+  },
+  {
+    href: "/emergency/colapso-energia",
+    title: "Colapso de energia",
+    desc: "Apagão, geladeira, gerador",
+    icon: BoltIcon,
+  },
+  {
+    href: "/emergency/falha-agua",
+    title: "Falha no abastecimento de água",
+    desc: "Diagnóstico, racionamento, fontes alternativas",
+    icon: DropletIcon,
+  },
+  {
+    href: "/emergency/perda-comunicacao",
+    title: "Perda de comunicação",
+    desc: "Rede congestionada, SMS, rádio",
+    icon: RadioIcon,
+  },
+  {
+    href: "/emergency/colapso-atendimento",
+    title: "Colapso do atendimento",
+    desc: "Triagem, SAMU 192, quando esperar",
+    icon: CheckIcon,
+  },
 ];
 
 export default function EmergencyStartPage() {
@@ -78,18 +108,23 @@ export default function EmergencyStartPage() {
 
         <div className="flex flex-col gap-2">
           <div className="font-mono text-[10px] font-semibold tracking-widest text-muted">
-            EM DESENVOLVIMENTO
+            OUTROS CENÁRIOS
           </div>
-          {EM_BREVE.map((title) => (
-            <div
+          {OUTROS_CENARIOS.map(({ href, title, desc, icon: Icon }) => (
+            <Link
               key={title}
-              className="flex items-center gap-3 p-3.5 bg-panel border border-[#ddd6c2] rounded-[3px] opacity-75"
+              href={href}
+              className="flex items-center gap-3 p-3.5 bg-white border border-border rounded-[3px]"
             >
-              <div className="w-9 h-9 rounded-[3px] bg-panel-2 text-muted flex items-center justify-center shrink-0">
-                <ClockIcon width={16} height={16} />
+              <div className="w-9 h-9 rounded-[3px] bg-amber-tint text-amber flex items-center justify-center shrink-0">
+                <Icon width={16} height={16} />
               </div>
-              <div className="font-semibold text-[13px] text-[#5b584f]">{title}</div>
-            </div>
+              <div className="flex-1">
+                <div className="font-semibold text-[13px] text-ink">{title}</div>
+                <div className="text-[11px] text-[#5b584f] mt-0.5">{desc}</div>
+              </div>
+              <ChevronRightIcon className="text-[#b0aa96]" width={16} height={16} />
+            </Link>
           ))}
         </div>
       </div>

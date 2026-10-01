@@ -63,16 +63,7 @@ function buildText(): string {
   for (const a of learnArticles) {
     lines.push(`### ${a.title} (${RISK_LABEL[a.riskLevel]})`);
     lines.push("");
-    lines.push("O QUE SABEMOS: " + a.weKnow);
-    lines.push("");
-    lines.push("O QUE É RECOMENDADO: " + a.recommended);
-    lines.push("");
-    lines.push("POR QUE FUNCIONA: " + a.why);
-    lines.push("");
-    lines.push("O QUE É INCERTO: " + a.uncertain);
-    lines.push("");
-    lines.push("MITOS E ERROS COMUNS:");
-    for (const myth of a.myths) lines.push("- " + myth);
+    lines.push(a.body);
     lines.push("");
     lines.push("Fontes: " + a.sources.map((s) => `${s.label} (${s.url})`).join(" · "));
     lines.push("Última revisão: " + a.lastReview);

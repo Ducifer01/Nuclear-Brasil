@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import AppShell from "@/components/AppShell";
 import { learnArticles, getLearnArticle } from "@/content/learn";
 import { RISK_LABEL } from "@/content/learn/types";
-import { EvidenceSection, MythsSection, VerifiedBadge } from "@/components/EvidenceBlock";
+import { ArticleBody, VerifiedBadge } from "@/components/EvidenceBlock";
 import { BatteryLowIcon } from "@/components/icons";
 
 export function generateStaticParams() {
@@ -70,19 +70,7 @@ export default async function LearnArticlePage({
 
         <div className="h-px bg-border" />
 
-        <EvidenceSection label="O QUE SABEMOS" tone="teal">
-          {article.weKnow}
-        </EvidenceSection>
-        <EvidenceSection label="O QUE É RECOMENDADO" tone="teal">
-          {article.recommended}
-        </EvidenceSection>
-        <EvidenceSection label="POR QUE FUNCIONA" tone="neutral">
-          {article.why}
-        </EvidenceSection>
-        <EvidenceSection label="O QUE É INCERTO" tone="amber">
-          {article.uncertain}
-        </EvidenceSection>
-        <MythsSection items={article.myths} />
+        <ArticleBody>{article.body}</ArticleBody>
 
         <div className="h-px bg-border" />
 

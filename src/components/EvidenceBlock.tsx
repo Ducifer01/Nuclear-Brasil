@@ -1,59 +1,25 @@
 import ReactMarkdown from "react-markdown";
-import { CheckIcon, ClockIcon, XMarkSmallIcon } from "./icons";
+import { CheckIcon, ClockIcon } from "./icons";
 import type { ArticleStatus } from "@/content/learn/types";
 
-const TONE = {
-  teal: "bg-teal-tint text-teal",
-  neutral: "bg-panel text-[#5b584f]",
-  amber: "bg-amber-tint text-amber",
-  red: "bg-red-tint text-[#8c2018]",
-} as const;
-
-function Prose({ children }: { children: string }) {
+/**
+ * Corpo de artigo em markdown livre — sem seções fixas. Cada artigo define
+ * sua própria estrutura de títulos (##), listas e parágrafos; este
+ * componente só estiliza o que vier, não impõe um template.
+ */
+export function ArticleBody({ children }: { children: string }) {
   return (
-    <div className="text-[13px] leading-[1.55] text-[#2a2823] [&_a]:underline [&_strong]:font-semibold">
+    <div
+      className="text-[13.5px] leading-[1.65] text-[#2a2823] flex flex-col gap-3.5
+        [&_a]:underline [&_strong]:font-semibold
+        [&_h2]:font-display [&_h2]:font-extrabold [&_h2]:text-[16px] [&_h2]:text-ink [&_h2]:mt-2
+        [&_h3]:font-semibold [&_h3]:text-[14px] [&_h3]:text-ink [&_h3]:mt-1
+        [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:flex [&_ul]:flex-col [&_ul]:gap-1.5
+        [&_ol]:list-decimal [&_ol]:pl-5 [&_ol]:flex [&_ol]:flex-col [&_ol]:gap-1.5
+        [&_li]:leading-[1.55] [&_blockquote]:border-l-2 [&_blockquote]:border-amber
+        [&_blockquote]:pl-3 [&_blockquote]:text-[#5b584f] [&_blockquote]:italic"
+    >
       <ReactMarkdown>{children}</ReactMarkdown>
-    </div>
-  );
-}
-
-export function EvidenceSection({
-  label,
-  tone,
-  children,
-}: {
-  label: string;
-  tone: keyof typeof TONE;
-  children: string;
-}) {
-  return (
-    <div className="flex flex-col gap-1.5">
-      <span
-        className={`self-start px-2.5 py-1 font-mono text-[9.5px] font-bold tracking-wide rounded-full ${TONE[tone]}`}
-      >
-        {label}
-      </span>
-      <Prose>{children}</Prose>
-    </div>
-  );
-}
-
-export function MythsSection({ items }: { items: string[] }) {
-  return (
-    <div className="flex flex-col gap-1.5">
-      <span
-        className={`self-start px-2.5 py-1 font-mono text-[9.5px] font-bold tracking-wide rounded-full ${TONE.red}`}
-      >
-        MITOS E ERROS COMUNS
-      </span>
-      <div className="flex flex-col gap-2 mt-0.5">
-        {items.map((item, i) => (
-          <div key={i} className="flex items-start gap-2">
-            <XMarkSmallIcon className="text-red shrink-0 mt-0.5" />
-            <p className="text-[13px] leading-[1.5] text-[#2a2823]">{item}</p>
-          </div>
-        ))}
-      </div>
     </div>
   );
 }

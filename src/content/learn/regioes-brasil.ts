@@ -19,16 +19,21 @@ export const regioesBrasil: LearnArticle = {
     { label: "ANA — Agência Nacional de Águas e Saneamento Básico", url: "https://www.gov.br/ana/pt-br" },
     { label: "Embrapa — Zoneamento Agrícola de Risco Climático (ZARC)", url: "https://www.embrapa.br/" },
   ],
-  weKnow:
-    "O Brasil tem cinco grandes regiões (Norte, Nordeste, Centro-Oeste, Sudeste, Sul) com climas, regimes de chuva, riscos naturais e calendários agrícolas muito diferentes entre si — confirmado pelas normais climatológicas do INMET, pelo histórico de alertas do CEMADEN e pelo zoneamento agrícola da Embrapa (ZARC). Um mesmo conselho de preparação (quanto armazenar, quando plantar, que risco climático priorizar) não é igualmente aplicável em todas elas.",
-  recommended:
-    "Leia o artigo específico da sua região — cada um cita fontes oficiais (INMET, CEMADEN, ANA, Embrapa) com o dado aplicável àquela região, em vez de uma média nacional que não descreve bem nenhum lugar específico:\n\n- [Região Norte](/learn/regiao-norte) — cheia/seca dos rios, lacuna histórica de saneamento\n- [Região Nordeste](/learn/regiao-nordeste) — semiárido vs. litoral úmido, cisternas\n- [Região Centro-Oeste](/learn/regiao-centro-oeste) — estação seca, risco de incêndio, polo de grãos\n- [Região Sudeste](/learn/regiao-sudeste) — deslizamentos urbanos, maior densidade populacional\n- [Região Sul](/learn/regiao-sul) — chuva o ano todo, temporais, o desastre de 2024 no RS\n\nPara decisões críticas (quando plantar, que fonte de água é segura localmente, que riscos naturais são mais prováveis na sua cidade), procure também a Defesa Civil municipal/estadual e órgãos de extensão rural da sua região — eles têm conhecimento hiperlocal que nenhum artigo nacional substitui.",
-  why:
-    "Clima, solo e regime de chuvas são os fatores que mais determinam o que funciona na prática em água e agricultura — dois dos pilares deste projeto. Dividir por região, em vez de generalizar nacionalmente, permite citar a fonte certa para o risco certo em cada lugar.",
-  uncertain:
-    "Mesmo os artigos regionais descrevem padrões gerais da região — características hiperlocais (bairro, município, propriedade rural específica) exigem sempre a fonte local (Defesa Civil do seu município, escritório regional da Embrapa/Emater).",
-  myths: [
-    "\"O que funciona em uma região do Brasil funciona em todas.\" — Clima, solo, regime de chuva e riscos naturais variam fortemente entre as cinco regiões; adaptação local é necessária.",
-    "\"A Defesa Civil só é útil durante o desastre.\" — Órgãos de Defesa Civil municipal/estadual e de extensão rural também orientam preparação e planejamento antes de qualquer evento.",
-  ],
+  body: `O Brasil não tem um clima — tem cinco. Norte, Nordeste, Centro-Oeste, Sudeste e Sul diferem em regime de chuva, risco natural predominante e calendário agrícola a ponto de um mesmo conselho de preparação (quanto armazenar, quando plantar, que risco priorizar) descrever bem uma região e descrever mal todas as outras quatro. Essa divisão não é uma opinião deste site — é o que normais climatológicas do INMET, o histórico de alertas do CEMADEN e o zoneamento agrícola da Embrapa (ZARC) mostram de forma consistente.
+
+## Por que uma média nacional falha
+
+Clima, solo e regime de chuva são os fatores que mais determinam o que funciona na prática em água e agricultura — e são exatamente os fatores que mais variam entre as regiões brasileiras. Uma recomendação pensada para a média nacional acaba não descrevendo bem nenhum lugar específico: subestima o risco de seca para quem está no semiárido nordestino, subestima o risco de enchente para quem está no Sul, ignora o calendário de plantio real da sua região.
+
+## Onde encontrar o que se aplica a você
+
+- [Região Norte](/learn/regiao-norte) — ciclo de cheia e seca dos rios, lacuna histórica de saneamento
+- [Região Nordeste](/learn/regiao-nordeste) — semiárido versus litoral úmido, o papel das cisternas
+- [Região Centro-Oeste](/learn/regiao-centro-oeste) — estação seca definida, risco de incêndio, o maior polo de grãos do país
+- [Região Sudeste](/learn/regiao-sudeste) — deslizamentos em encostas urbanas, maior densidade populacional
+- [Região Sul](/learn/regiao-sul) — chuva distribuída o ano todo, temporais, o desastre de 2024 no Rio Grande do Sul
+
+## O limite de qualquer artigo regional
+
+Mesmo um artigo escrito para a sua região descreve um padrão geral — características hiperlocais (o bairro específico, o município, uma propriedade rural particular) exigem a fonte local: a Defesa Civil do seu município e o escritório regional de extensão rural (Embrapa/Emater) têm conhecimento que nenhum conteúdo de alcance nacional consegue replicar. Vale notar que esse conhecimento local tem utilidade antes do desastre, não só durante ele — Defesa Civil e extensão rural também orientam planejamento e preparação, não apenas resposta a emergência já em curso.`,
 };

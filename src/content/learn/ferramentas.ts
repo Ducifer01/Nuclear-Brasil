@@ -19,17 +19,21 @@ export const ferramentas: LearnArticle = {
       url: "https://www.iaea.org/topics/emergency-preparedness-and-response",
     },
   ],
-  weKnow:
-    "Uma pessoa pode ter equipamentos de qualidade e ainda assim não conseguir usá-los ou mantê-los funcionando. \"Alfabetização mecânica\" é a capacidade básica de identificar um problema simples, escolher a ferramenta certa e resolvê-lo — ou reconhecer quando o problema exige um profissional.",
-  recommended:
-    "Mantenha um conjunto básico de ferramentas manuais: alicate, chave de fenda e Phillips, martelo, serrote pequeno, fita métrica, fita adesiva resistente, cordas e abraçadeiras, além de parafusos e materiais de reparo variados. Aprenda o uso correto de cada uma antes de precisar — não durante a emergência. Vedação de vazamentos pequenos, reparos elétricos simples (trocar um fusível, por exemplo) e manutenção preventiva de equipamentos (limpeza, lubrificação, verificação de folgas) evitam que problemas pequenos se tornem grandes.",
-  why:
-    "Manutenção preventiva é sistematicamente mais barata e mais segura do que reparo emergencial: verificar e ajustar um equipamento regularmente evita falhas súbitas no momento em que ele é mais necessário. Conhecer os limites da própria habilidade evita danos maiores — reparos elétricos e hidráulicos mais complexos envolvem riscos reais (choque, incêndio, vazamento) quando feitos sem conhecimento adequado.",
-  uncertain:
-    "O nível de conhecimento técnico necessário varia muito conforme o tipo de moradia, os equipamentos disponíveis e a duração esperada da interrupção de serviços — uma casa isolada em zona rural tem necessidades diferentes de um apartamento urbano.",
-  myths: [
-    "\"Fita adesiva resolve qualquer vazamento definitivamente.\" — Serve como reparo temporário em muitos casos, mas não substitui reparo adequado assim que possível.",
-    "\"Se funciona, não precisa de manutenção.\" — Falhas em equipamentos costumam ser precedidas por sinais (ruído, folga, desgaste) que a manutenção preventiva identifica antes da quebra total.",
-    "\"Reparo elétrico é sempre simples de fazer sozinho.\" — Trocar um fusível é diferente de mexer em fiação; sem conhecimento e sem desligar a energia corretamente, o risco de choque e incêndio é real.",
-  ],
+  body: `Ter uma ferramenta não é o mesmo que saber usá-la, e saber usá-la não é o mesmo que saber quando parar e chamar alguém mais qualificado. "Alfabetização mecânica" é essa combinação: identificar o problema, escolher a ferramenta certa, resolver o que está dentro da sua capacidade, e reconhecer com clareza o que não está.
+
+## Por que manutenção preventiva vale mais que reparo emergencial
+
+Quase todo equipamento dá sinais antes de falhar completamente — um ruído novo, uma folga que não existia, um desgaste visível. Manutenção preventiva é simplesmente parar periodicamente para notar esses sinais antes que se tornem uma falha súbita no pior momento possível. Isso é sistematicamente mais barato e mais seguro do que reparo de emergência, porque dá tempo para resolver com calma, com as peças certas, em vez de sob pressão com o que estiver disponível. A pergunta "se está funcionando, por que mexer?" ignora que falhas raramente são instantâneas — elas têm um histórico de sinais que a manutenção regular é o que detecta.
+
+## O conjunto básico, e por que cada item está nele
+
+Alicate, chaves de fenda e Phillips, martelo, serrote pequeno e fita métrica cobrem a maioria dos reparos mecânicos simples do dia a dia — fixar, cortar, medir, remover e apertar. Fita adesiva resistente e cordas resolvem fixações temporárias rapidamente, mas "temporário" é a palavra chave: fita adesiva estanca um vazamento por tempo suficiente para você fazer o reparo correto depois, não é o reparo em si — tratá-la como solução definitiva só adia um problema que vai voltar, geralmente em pior estado. Abraçadeiras e parafusos variados existem porque a maioria dos reparos improvisados precisa prender algo a outra coisa, e ter esse material à mão evita depender de uma loja que pode não estar aberta.
+
+## Reparo elétrico: onde a linha de segurança está
+
+Trocar um fusível ou um disjuntor é uma operação simples e segura quando feita com a energia desligada no ponto certo. Mexer em fiação exposta, emendar cabos ou qualquer intervenção além da troca de componentes já isolados é outra categoria de risco — choque elétrico e incêndio são consequências reais de fiação malfeita, e o conhecimento necessário para fazer isso com segurança vai além do que este artigo cobre. A regra prática: se a tarefa envolve trocar uma peça desenhada para ser trocada pelo usuário, está dentro do razoável; se envolve abrir, cortar ou emendar fiação, é hora de um profissional ou de aprender especificamente essa habilidade antes de tentar.
+
+## Por que o nível de preparo certo varia por contexto
+
+Uma casa isolada, longe de serviços de manutenção rápidos, se beneficia de um conjunto de ferramentas e conhecimento mais amplo do que um apartamento em área urbana com acesso fácil a profissionais. Não existe uma lista única de "o que todo mundo precisa saber" — existe a pergunta de quanto tempo você esperaria, na pior hipótese, para conseguir ajuda externa, e o que você precisaria resolver sozinho durante esse tempo.`,
 };

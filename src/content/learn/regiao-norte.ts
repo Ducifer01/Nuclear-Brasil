@@ -20,16 +20,23 @@ export const regiaoNorte: LearnArticle = {
     { label: "Embrapa — Zoneamento Agrícola de Risco Climático (ZARC)", url: "https://www.embrapa.br/" },
     { label: "SEDEC/MDR — Guia Prático de Utilização de Alertas do Governo Federal", url: "https://www.gov.br/mdr/pt-br/centrais-de-conteudo/publicacoes/protecao-e-defesa-civil-sedec/guiapraticodesastres.pdf" },
   ],
-  weKnow:
-    "A região Norte tem clima predominantemente equatorial, com chuva abundante ao longo do ano e um ciclo bem marcado de cheia e seca dos grandes rios amazônicos (o INMET publica as normais climatológicas de temperatura, chuva e umidade por estação meteorológica da região). Apesar da abundância de água na natureza, o SNIS (Sistema Nacional de Informações sobre Saneamento) registra historicamente os menores índices de cobertura de abastecimento de água tratada e esgotamento sanitário do país nesta região — ou seja, o risco predominante não é falta de água na natureza, mas falta de tratamento e distribuição.",
-  recommended:
-    "Priorize o planejamento em torno do calendário de cheia/seca dos rios da sua sub-região (fonte local: Defesa Civil municipal e, quando disponível, boletins do CEMADEN) — cheias podem isolar comunidades ribeirinhas por dias ou semanas. Trate toda água de rio, poço ou chuva antes de beber, mesmo com aparência limpa — a diferença entre cobertura de saneamento aqui e em outras regiões torna a contaminação microbiológica um risco maior, não menor, do que a escassez. Para produção de alimentos, o zoneamento agrícola da Embrapa (ZARC) indica calendários de plantio específicos por município para cultivos adaptados ao clima úmido da região (como mandioca e frutas tropicais) — consulte a Emater ou escritório local da Embrapa antes de plantar.",
-  why:
-    "O regime de cheia e seca dos rios amazônicos é previsível em ciclo anual, mas a magnitude varia ano a ano — por isso planejamento de estoque (água, alimento) precisa considerar o pior cenário de isolamento, não a média. A lacuna histórica de saneamento na região (SNIS) significa que rios e poços recebem mais esgoto não tratado, proporcionalmente, do que em regiões com maior cobertura — o que eleva o risco de contaminação mesmo em fontes que parecem limpas.",
-  uncertain:
-    "A situação varia muito entre capitais (melhor cobertura de saneamento) e comunidades ribeirinhas/rurais isoladas (pior cobertura) — não existe uma média regional que descreva bem os dois extremos. Dados hiperlocais de risco de desastre e calendário agrícola exigem consulta direta à Defesa Civil do seu município e ao escritório local da Embrapa/Emater, que este artigo não substitui.",
-  myths: [
-    "\"Na Amazônia, água nunca falta.\" — Água na natureza é abundante, mas água tratada e segura para beber depende de infraestrutura de saneamento, que tem cobertura historicamente mais baixa na região — os dois problemas são diferentes.",
-    "\"Se o rio está cheio, a água está mais diluída e mais segura.\" — O volume de água não indica ausência de contaminação; cheias frequentemente arrastam esgoto e resíduos para dentro dos rios, podendo piorar a contaminação.",
-  ],
+  body: `O Norte tem clima equatorial, com chuva abundante o ano todo (as normais climatológicas do INMET documentam isso por estação meteorológica da região) e um ciclo anual bem marcado de cheia e seca dos grandes rios amazônicos. A primeira coisa a entender sobre essa região é que o risco de água não é escassez — é tratamento. Dados de saneamento do país mostram historicamente a menor cobertura de abastecimento de água tratada e esgotamento sanitário justamente aqui, apesar da abundância de água na natureza. São dois problemas diferentes, e confundi-los leva à conclusão errada.
+
+## Por que "água abundante" não significa "água segura"
+
+Água na natureza não precisa de tratamento para existir — precisa de tratamento para ser segura de beber. A lacuna histórica de saneamento na região significa que, proporcionalmente, mais esgoto não tratado chega a rios e poços aqui do que em regiões com maior cobertura. O efeito prático: trate toda água de rio, poço ou chuva antes de beber, mesmo quando parece limpa — a aparência não indica contaminação microbiológica, e a probabilidade dessa contaminação é mais alta nesta região especificamente, não mais baixa por conta do volume de água disponível.
+
+## Por que um rio cheio não é mais seguro
+
+Existe uma intuição de que mais volume de água dilui qualquer contaminante, tornando-o mais seguro. Na prática, cheias frequentemente arrastam esgoto e resíduos acumulados para dentro dos próprios rios, o que pode piorar a contaminação em vez de diluí-la. O volume de água não é um indicador confiável de segurança — a origem e o que pode ter entrado nela entre a origem e o ponto de coleta continuam sendo o que importa, como em qualquer avaliação de fonte de água.
+
+## Planejando em torno do ciclo de cheia e seca
+
+O regime de cheia e seca dos rios amazônicos segue um ciclo anual previsível, mas a magnitude de cada cheia varia de ano para ano — algumas isolam comunidades ribeirinhas por dias, outras por semanas. Isso significa que o planejamento de estoque (água, alimento) para quem vive perto desses rios precisa considerar o cenário de isolamento mais longo plausível, não a média histórica, porque é o pior cenário que determina se o estoque é suficiente quando mais importa. Boletins do CEMADEN e da Defesa Civil municipal são a fonte certa para acompanhar a previsão de cada ciclo específico.
+
+## Agricultura adaptada ao clima úmido
+
+O zoneamento agrícola da Embrapa (ZARC) indica calendários de plantio específicos por município para culturas adaptadas ao clima úmido da região, como mandioca e frutas tropicais. Antes de plantar, consultar a Emater ou o escritório local da Embrapa não é um passo opcional — é o que traduz o padrão regional geral descrito aqui para a realidade específica do seu município.
+
+A situação de saneamento varia muito entre capitais (cobertura melhor) e comunidades ribeirinhas ou rurais isoladas (cobertura pior) — nenhuma média regional descreve bem os dois extremos ao mesmo tempo.`,
 };

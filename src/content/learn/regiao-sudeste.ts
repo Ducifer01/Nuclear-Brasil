@@ -20,16 +20,17 @@ export const regiaoSudeste: LearnArticle = {
     { label: "Embrapa — Zoneamento Agrícola de Risco Climático (ZARC)", url: "https://www.embrapa.br/" },
     { label: "SEDEC/MDR — Guia Prático de Utilização de Alertas do Governo Federal", url: "https://www.gov.br/mdr/pt-br/centrais-de-conteudo/publicacoes/protecao-e-defesa-civil-sedec/guiapraticodesastres.pdf" },
   ],
-  weKnow:
-    "O Sudeste tem verão chuvoso e inverno seco bem marcados (INMET). A concentração de chuva no verão, combinada com ocupação urbana de encostas e áreas de risco nas regiões metropolitanas, faz de deslizamentos de terra e enchentes urbanas o principal risco natural monitorado pelo CEMADEN nessa região — inclusive com notas técnicas específicas emitidas para eventos de chuva intensa no Sudeste. É também a região de maior concentração populacional e de maior demanda de água tratada do país, o que amplia o impacto de qualquer falha de abastecimento.",
-  recommended:
-    "Se você mora em encosta ou perto de córrego/rio urbano, conheça com antecedência os sinais de risco (rachaduras em muros/postos, água turva ou barrenta de repente, ruído de terra se movendo) e o contato local da Defesa Civil (199) — em risco iminente, priorize deixar o local em vez de esperar confirmação. Acompanhe alertas de chuva intensa do CEMADEN/INMET no período de verão. Para abastecimento de água, tenha reserva própria (ver artigo de Água) — a alta densidade urbana da região significa que uma falha de grande escala afeta muitas pessoas simultaneamente, o que pode atrasar o reestabelecimento do serviço.",
-  why:
-    "Encostas urbanas ocupadas de forma irregular combinadas com chuva concentrada em poucos meses do ano criam risco de deslizamento previsível em janela de tempo, mas imprevisível em local exato — por isso conhecer os sinais de alerta localmente importa mais do que confiar apenas em previsão regional. A alta densidade populacional da região Sudeste significa que problemas de infraestrutura (água, energia) tendem a ter escala de impacto maior e tempo de resposta mais lento por pessoa afetada, simplesmente pelo volume de pessoas na fila de atendimento.",
-  uncertain:
-    "O risco específico de deslizamento depende de características hiperlocais de solo e ocupação que variam rua a rua — este artigo não substitui o mapeamento de áreas de risco do seu município, que a prefeitura e a Defesa Civil local devem manter atualizado.",
-  myths: [
-    "\"Deslizamento só acontece em época de chuva muito forte, dias normais são seguros.\" — O solo pode já estar saturado de chuvas anteriores; um dia de chuva moderada pode ser o gatilho final depois de dias de chuva acumulada.",
-    "\"Uma cidade grande sempre tem abastecimento de água garantido.\" — Infraestrutura de grande escala também falha, e o volume de pessoas dependentes dela nas regiões metropolitanas do Sudeste torna o impacto de qualquer falha proporcionalmente maior.",
-  ],
+  body: `O Sudeste tem verão chuvoso e inverno seco bem marcados pelas normais climatológicas do INMET. O que torna essa concentração de chuva um risco real, e não apenas uma estatística, é a combinação com ocupação urbana de encostas nas regiões metropolitanas — essa combinação é o que o CEMADEN monitora de perto, a ponto de emitir notas técnicas específicas para eventos de chuva intensa na região.
+
+## Por que o risco de deslizamento é previsível em janela, não em local
+
+Chuva concentrada em poucos meses do ano, caindo sobre encostas urbanas muitas vezes ocupadas de forma irregular, cria uma janela de tempo em que o risco de deslizamento sobe de forma previsível — mas o local exato onde um deslizamento específico vai acontecer continua imprevisível a partir de dados regionais. É por isso que conhecer os sinais de risco localmente (rachaduras em muros ou postes, água de repente turva ou barrenta, ruído de terra se movendo) importa mais, na prática, do que confiar apenas na previsão de chuva da região — o sinal local é o que avisa sobre o risco específico do seu terreno, não a estatística da cidade inteira.
+
+Um erro comum é presumir que só chuva muito forte traz risco. Solo que já está saturado de chuvas anteriores pode ser levado ao ponto de ruptura por um dia de chuva apenas moderada — o gatilho final de um deslizamento muitas vezes não é o pior dia de chuva, é o último de uma sequência de dias que já saturou o solo. Diante de qualquer sinal de risco, para quem mora em encosta ou perto de córrego/rio urbano, a decisão correta é deixar o local e contatar a Defesa Civil (199), em vez de esperar confirmação adicional.
+
+## Por que densidade populacional muda a escala de qualquer falha
+
+O Sudeste concentra a maior população e a maior demanda de água tratada do país. Isso não torna a infraestrutura mais frágil tecnicamente, mas significa que, quando uma falha de grande escala acontece, ela afeta um volume de pessoas muito maior simultaneamente — e o tempo de resposta por pessoa afetada tende a ser mais lento, simplesmente pelo volume na fila de atendimento. "Cidade grande" não é sinônimo de "abastecimento garantido" — é sinônimo de "mais gente dependendo da mesma infraestrutura ao mesmo tempo", o que amplia, não reduz, a importância de ter reserva própria de água em casa.
+
+O risco específico de deslizamento depende de características de solo e ocupação que variam rua a rua — este artigo descreve o padrão regional, não substitui o mapeamento de áreas de risco que a prefeitura e a Defesa Civil do seu município devem manter atualizado.`,
 };

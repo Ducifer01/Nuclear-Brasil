@@ -1,0 +1,90 @@
+import type { Scenario } from "@/lib/emergencyScenario";
+
+export const desastreNaturalScenario: Scenario = {
+  slug: "desastre-natural",
+  defaultPhaseIndex: 2,
+  sourceLabel: "CEMADEN / SEDEC-MDR — Guia de Preparação para Desastres",
+  sourceUrl: "https://www.gov.br/mdr/pt-br/centrais-de-conteudo/publicacoes/protecao-e-defesa-civil-sedec/guiapraticodesastres.pdf",
+  reviewDate: "01/10/2026",
+  authorityLevel: 1,
+  relatedArticleHref: "/learn/abrigo",
+  relatedArticleLabel: "Abrigo: proteção dentro de um edifício",
+  phases: [
+    {
+      key: "antes",
+      tab: "ANTES",
+      phaseLabel: "FASE 0 · PREPARAÇÃO",
+      title: "ANTES",
+      subtitle: "Enchente e deslizamento costumam dar sinais antes do evento principal — saber reconhecê-los é a maior parte da preparação.",
+      steps: [
+        "Descubra se seu bairro está em área de risco mapeada (encosta, margem de rio) — a prefeitura e a Defesa Civil municipal mantêm esse mapeamento, e ele muda completamente o nível de atenção que você precisa manter.",
+        "Cadastre seu celular no sistema de alerta por SMS enviando o CEP da sua região para o número 40199 — esse canal funciona mesmo quando você não está checando aplicativos ou notícias ativamente.",
+        "Monte o Kit 1 (10 minutos) e mantenha-o em local de fácil acesso — numa evacuação por deslizamento ou enchente, o tempo entre o sinal de alerta e a necessidade real de sair pode ser curto.",
+        "Combine com a família uma área alta e segura para onde ir, sem depender de comunicação no momento — isso resolve o problema de reencontro antes mesmo de ele acontecer.",
+      ],
+    },
+    {
+      key: "durante",
+      tab: "SINAIS",
+      phaseLabel: "FASE 0 · SINAIS DE RISCO",
+      title: "SINAIS DE RISCO",
+      subtitle: "O gatilho final de um deslizamento é frequentemente um dia de chuva apenas moderada — depois de dias de chuva acumulada que já saturaram o solo.",
+      steps: [
+        "Rachaduras novas em muros, postes ou no próprio terreno indicam movimento de solo em andamento — não é um sinal para observar com atenção, é um sinal para agir.",
+        "Água de rio ou córrego que fica turva ou sobe de forma repentina pode anteceder uma enchente em minutos, não horas — a velocidade da mudança é o que importa, mais do que o nível absoluto da água.",
+        "Ruído incomum de terra se movendo, árvores ou postes inclinando, é um sinal direto de deslizamento em curso nas proximidades.",
+        "Diante de qualquer um desses sinais, a decisão correta é evacuar imediatamente, sem esperar confirmação oficial — os sinais físicos chegam antes de qualquer alerta formal poder ser emitido.",
+      ],
+    },
+    {
+      key: "agora",
+      tab: "AGORA",
+      phaseLabel: "FASE 1 · AGORA",
+      title: "AGORA",
+      subtitle: "Evacuar para a área segura combinada é a prioridade — mais do que proteger pertences.",
+      steps: [
+        "Vá diretamente para a área alta e segura combinada com antecedência, pelo caminho que você já conhece como mais confiável.",
+        "Nunca atravesse a pé ou de veículo uma via alagada — a profundidade e a força da água corrente são difíceis de avaliar visualmente, e é uma das formas mais comuns de pessoas serem levadas pela correnteza em enchentes urbanas.",
+        "Ajude vizinhos vulneráveis (idosos, pessoas com mobilidade reduzida) a evacuar, se puder fazer isso com segurança para você mesmo — não force uma situação que coloque as duas pessoas em risco.",
+        "Leve documentos e medicamentos essenciais se estiverem imediatamente à mão, mas não volte para buscá-los depois de já ter saído — o tempo ganho evacuando rápido vale mais do que qualquer item.",
+      ],
+    },
+    {
+      key: "primeira-hora",
+      tab: "1ª HORA",
+      phaseLabel: "FASE 2 · 1ª HORA",
+      title: "PRIMEIRA HORA",
+      subtitle: "Depois de evacuar, o próximo passo é se conectar à resposta oficial, não tentar avaliar os danos sozinho.",
+      steps: [
+        "Contate a Defesa Civil (199) para informar sua situação e localização atual, especialmente se você soube de alguém que ainda está em área de risco.",
+        "Permaneça na área segura — o impulso de voltar para checar a casa é comum, mas o evento pode não ter terminado, e uma segunda onda de deslizamento ou uma nova subida do nível da água pode acontecer sem aviso adicional.",
+        "Evite contato com água de enchente diretamente — ela carrega esgoto, resíduos e, por vezes, animais e objetos perigosos arrastados pela correnteza.",
+        "Se possível, avise seu contato fora da região combinado com antecedência de que está em segurança.",
+      ],
+    },
+    {
+      key: "24h",
+      tab: "24H",
+      phaseLabel: "FASE 3 · 24 HORAS",
+      title: "PRIMEIRAS 24 HORAS",
+      subtitle: "A situação pode continuar evoluindo mesmo depois que a chuva parar.",
+      steps: [
+        "Acompanhe boletins oficiais do CEMADEN e da Defesa Civil, não apenas a aparência do tempo lá fora — o nível de um rio pode continuar subindo horas depois da chuva ter cessado na sua região, por causa de água vinda de áreas mais altas da bacia.",
+        "Trate qualquer água que tenha tido contato com a enchente como contaminada — isso inclui poços próximos que podem ter recebido infiltração de água de enchente, mesmo sem contato direto visível.",
+        "Evite deslocamentos não essenciais — vias podem estar comprometidas de formas que não são visíveis à primeira vista, como erosão sob o asfalto.",
+      ],
+    },
+    {
+      key: "dias",
+      tab: "DIAS",
+      phaseLabel: "FASE 4 · DIAS SEGUINTES",
+      title: "DIAS SEGUINTES",
+      subtitle: "Retornar com segurança exige liberação oficial, não apenas a água ter baixado.",
+      steps: [
+        "Só retorne à sua casa com liberação oficial — uma estrutura que teve a base erodida por enchente ou um talude que cedeu parcialmente pode ceder completamente mais tarde, mesmo com aparência de estabilidade.",
+        "Ao entrar, verifique a estrutura antes de ocupar normalmente — rachaduras novas, inclinação de paredes ou piso instável são sinais de que a avaliação de um profissional é necessária antes de reocupar.",
+        "Descarte com segurança qualquer item que teve contato direto com água de enchente ou lama — a contaminação por esgoto e resíduos não é sempre visível ou perceptível pelo cheiro.",
+      ],
+    },
+  ],
+};

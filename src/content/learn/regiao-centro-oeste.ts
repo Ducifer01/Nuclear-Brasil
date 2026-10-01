@@ -20,16 +20,23 @@ export const regiaoCentroOeste: LearnArticle = {
     { label: "Embrapa — Zoneamento Agrícola de Risco Climático (ZARC)", url: "https://www.embrapa.br/" },
     { label: "SEDEC/MDR — Guia Prático de Utilização de Alertas do Governo Federal", url: "https://www.gov.br/mdr/pt-br/centrais-de-conteudo/publicacoes/protecao-e-defesa-civil-sedec/guiapraticodesastres.pdf" },
   ],
-  weKnow:
-    "O Centro-Oeste tem clima tropical com estação seca e chuvosa bem definidas (INMET) — a estação seca (aproximadamente maio a setembro) concentra o maior risco de incêndio florestal e de vegetação, especialmente no Pantanal e no Cerrado, monitorado pelo CEMADEN. A região é o maior polo de grãos do país (soja, milho), com calendário de plantio definido pelo zoneamento da Embrapa (ZARC) por município. O índice de cobertura de abastecimento de água, segundo dados de saneamento, fica em posição intermediária no país — melhor que Norte/Nordeste, próximo de Sul/Sudeste.",
-  recommended:
-    "Na estação seca, trate risco de incêndio como prioridade: evite queimadas mesmo controladas perto de vegetação seca, mantenha faixas de segurança ao redor de estruturas rurais, e seja conservador com fontes de ignição (fogueiras, churrasqueiras) em dias secos e com vento. No Pantanal e áreas de planície inundável, monitore o calendário de cheia/vazante, que pode limitar acesso por estrada em certos meses. Para agricultura, siga o zoneamento ZARC do seu município — a Embrapa valida datas de plantio pensando em reduzir o risco de perda por seca ou geada fora da janela recomendada.",
-  why:
-    "A combinação de vegetação nativa inflamável (Cerrado) com estação seca longa e bem definida cria uma janela de risco de incêndio previsível — por isso a prevenção concentrada nesse período tem mais retorno do que vigilância constante o ano todo. O zoneamento agrícola (ZARC) existe justamente porque plantar fora da janela recomendada aumenta o risco de perda por condições climáticas desfavoráveis — é uma ferramenta de redução de risco, não uma formalidade burocrática.",
-  uncertain:
-    "A extensão e a severidade da estação seca variam ano a ano; alertas de incêndio do CEMADEN e de órgãos estaduais de meio ambiente devem ser acompanhados em tempo real, não substituídos pela expectativa histórica. O risco específico de cheia no Pantanal varia por sub-região e depende de dados hidrológicos locais que este artigo não cobre em detalhe.",
-  myths: [
-    "\"Queimada controlada não tem risco na estação seca.\" — Vegetação seca e vento tornam qualquer fogo mais difícil de controlar do que em outras épocas do ano, mesmo com intenção de controle.",
-    "\"O calendário de plantio é só uma recomendação, pode plantar quando quiser.\" — O zoneamento agrícola de risco climático (ZARC) é baseado em décadas de dados; plantar fora da janela aumenta mensuravelmente o risco de perda da safra.",
-  ],
+  body: `O Centro-Oeste tem estação seca e chuvosa bem definidas pelas normais climatológicas do INMET — e é a extensão e a regularidade dessa estação seca (aproximadamente maio a setembro) que molda os dois riscos mais relevantes da região: incêndio e janela agrícola.
+
+## Por que a estação seca concentra o risco de incêndio
+
+Vegetação nativa do Cerrado é naturalmente inflamável, e uma estação seca longa e bem definida desidrata essa vegetação de forma previsível todo ano — a combinação das duas coisas cria uma janela de risco de incêndio concentrada, monitorada pelo CEMADEN, especialmente no Pantanal e no Cerrado. Essa previsibilidade tem uma implicação prática direta: prevenção concentrada nesse período específico (evitar qualquer queimada perto de vegetação seca, manter faixas de segurança ao redor de estruturas rurais, ser conservador com fogueiras e churrasqueiras em dias secos e com vento) tem retorno muito maior do que vigilância constante e uniforme o ano todo. "Queimada controlada" não elimina esse risco — vegetação seca e vento tornam qualquer fogo mais difícil de conter do que em outras épocas, mesmo com intenção de controle total.
+
+## O Pantanal: cheia e vazante como variável de planejamento
+
+Em áreas de planície inundável como o Pantanal, o calendário de cheia e vazante pode limitar acesso por estrada em determinados meses do ano — uma variável concreta de planejamento, não um detalhe secundário, para quem depende dessas rotas. O risco específico de cheia varia por sub-região e depende de dados hidrológicos locais que vão além do que este artigo cobre; para decisões específicas, a fonte correta é o monitoramento hidrológico local, não uma expectativa genérica regional.
+
+## Por que o zoneamento agrícola não é burocracia
+
+O Centro-Oeste é o maior polo de grãos do país, e o zoneamento agrícola da Embrapa (ZARC) define, por município, a janela de plantio que reduz o risco de perda por seca ou geada fora dessa janela. Isso existe porque décadas de dados mostram que plantar fora do período recomendado aumenta mensuravelmente o risco de perda de safra — não é uma recomendação formal que pode ser ignorada "se der tempo", é uma ferramenta construída especificamente para reduzir um risco real e documentado.
+
+## Água: posição intermediária, não motivo para menos atenção
+
+A cobertura de abastecimento de água na região fica em posição intermediária no país — melhor que Norte e Nordeste, próxima de Sul e Sudeste. Isso não elimina a necessidade de atenção a fontes de água e à qualidade da água disponível, apenas indica que o risco predominante na região está mais concentrado em incêndio e calendário agrícola do que em escassez estrutural de água tratada.
+
+A extensão e a severidade de cada estação seca específica variam ano a ano — alertas de incêndio do CEMADEN e de órgãos estaduais de meio ambiente, acompanhados em tempo real, informam melhor a situação de um ano específico do que a expectativa histórica da região.`,
 };

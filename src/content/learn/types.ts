@@ -26,16 +26,14 @@ export type LearnArticle = {
   lastReview: string;
   nextReview: string;
   sources: SourceRef[];
-  /** Markdown — "O que sabemos" */
-  weKnow: string;
-  /** Markdown — "O que é recomendado" */
-  recommended: string;
-  /** Markdown — "Por que funciona" */
-  why: string;
-  /** Markdown — "O que é incerto" */
-  uncertain: string;
-  /** Cada item é um mito/erro a desfazer */
-  myths: string[];
+  /**
+   * Corpo do artigo em markdown — texto livre, sem template fixo. Cada
+   * artigo usa a estrutura (seções, listas, parágrafos) que fizer sentido
+   * para o assunto específico; nenhum formato é reaplicado universalmente.
+   * O objetivo é ensinar a técnica e o raciocínio por trás dela, não
+   * apenas listar instruções.
+   */
+  body: string;
 };
 
 export const RISK_LABEL: Record<RiskLevel, string> = {
